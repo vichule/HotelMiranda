@@ -1,0 +1,31 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__container1{
+    display: flex;
+    min-height: 10em;
+    padding-left: 1em;
+}
+
+.header__container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 8em;
+    padding-right: 2em;
+}
+
+.header__button{
+    background: none;
+    border: none;
+}
+
+.header__logo{
+    margin-top: 2em;
+    background: url(../../assets/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 15em;
+}

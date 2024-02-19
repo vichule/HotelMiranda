@@ -1,0 +1,65 @@
+
+.dateCheck{
+    background-color: #222222;
+    color: white;
+    padding: 3em 1.5em 3em 1.5em;
+
+    &__label{
+        font-family: Roboto;
+        font-size: 1.5em;
+        font-weight: 700;
+        line-height: 1.9em;
+        text-align: left;
+        display: block;
+    }
+    &__input1{
+        margin-bottom: 1em;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid #BEAD8E;
+        color: #686868;
+        width: 34.5em;
+        font-family: Roboto;
+        font-weight: 400;
+        line-height: 1.6em;
+
+    }
+    &__input1::-webkit-calendar-picker-indicator{
+        position: absolute;
+        left: 0;
+        cursor: pointer;
+        background-image: url('/assets/calendar.png');
+        
+    }
+    &__input2{
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid #BEAD8E;
+        color: #686868;
+        width: 34.5em;
+        font-family: Roboto;
+        font-weight: 400;
+        line-height: 1.6em;
+
+    }
+    &__input2::-webkit-calendar-picker-indicator{
+        position: absolute;
+        left: 0;
+        cursor: pointer;
+        background-image: url('/assets/calendar.png');
+        
+    }
+    &__checkBtn{
+        background: #BEAD8E;
+        color: white;
+        font-family: Archivo;
+        font-size: 1em;
+        font-weight: 700;
+        line-height: 1.5em;
+        letter-spacing: 0.1em;
+        width: 25em;
+        height: 6em;
+        display: block;
+        margin-top: 5em;
+    }
+}
