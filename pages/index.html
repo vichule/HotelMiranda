@@ -10,12 +10,12 @@
     <body>
         <header>
             <div class="header__container1">
-                <button class="header__button"><img src="../../assets/menu.png"></button>
+                <button class="header__button"><img src="/assets/header/menu.png"></button>
                 <div class="header__logo"></div>
             </div>
             <div class="header__container2">
-                <button class="header__button"><img src="../../assets/profile.png"></button>
-                <button class="header__button"><img src="../../assets/search.png"></button>
+                <button class="header__button"><img src="/assets/header/profile.png"></button>
+                <button class="header__button"><img src="/assets/header/search.png"></button>
             </div>
 
         </header>
@@ -38,26 +38,224 @@
             <h2 class="homeAbout__subtitle">Discover Our Undergound.</h2>
             <p class="homeAbout__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <button class="homeAbout__btn">BOOK NOW</button>
-            <img src="" alt="" class="homeAbout__pic">
+            <img src="/assets/home/team.jpg" alt="" class="homeAbout__pic">
             <div class="homeAbout__teamContainer">
-                <img src="/assets/teamImg.png" alt="" class="homeAbout__teamContainer__img">
+                <img src="/assets/home/teamImg.png" alt="" class="homeAbout__teamContainer__img">
                 <h1 class="homeAbout__teamContainer__title">Strong Team</h1>
                 <p class="homeAbout__teamContainer__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
             </div>
-            <img src="" alt="" class="homeAbout__pic">
+            <img src="/assets/home/luxury_room.jpg" alt="" class="homeAbout__pic">
             <div class="homeAbout__roomContainer">
-                <img src="/assets/teamLuxury.png" alt="" class="homeAbout__roomContainer__img">
+                <img src="/assets/home/teamLuxury.png" alt="" class="homeAbout__roomContainer__img">
                 <h1 class="homeAbout__roomContainer__title">Luxury Room</h1>
                 <p class="homeAbout__roomContainer__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
 
             </div>
         </section>
+        <section class="homerooms">
+            <h1 class="homerooms__title">ROOMS</h1>
+            <h2 class="homerooms__subtitle">Hand Picked Rooms</h2>
+            <img src="/assets/home/frame_rooms.jpg" alt="" class="homerooms__complements">
+            <div class="homerooms__slider">
+                <div class="homerooms__slider__container">
+                    <div class="homerooms__slider__container_item" id="containers">
+                        <img id="roomsImg" src="/assets/home/minimal_room.jpg" alt="">
+                    </div>
+                    <a class="homerooms__slider__container__backArrow" id="backArrow" >&#10094;</a>
+                    <a class="homerooms__slider__container__forwardArrow" id="forwardArrow" >&#10095;</a>
+                </div>
+                <div class="homerooms__slider__descriptions">
+                    <div class="homerooms__slider__descriptions__item" id="description1" >
+                        <h1 class="homerooms__slider__descriptions__item__title">Minimal Duplex Room</h1>
+                        <p class="homerooms__slider__descriptions__item__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        <span class="homerooms__slider__descriptions__item__price">$345/Night</span>
+                    </div>
+                </div> 
 
-        <footer>
-            <div class="">
+            </div>
+        </section>
+        <section class="intro">
+            <div class="intro__container">
+                <h1 class="intro__container__title">INTRO VIDEO</h1>
+                <h2 class="intro__container__subtitle">Meet With Our Luxury Place.</h2>
+                <p class="intro__container__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.</p>
+                <iframe class="intro__container__video" src="https://www.youtube.com/embed/H1CIBqDeWQ0?controls=0&mute=1&showinfo=0&rel=0&autoplay=0&loop=1"></iframe>
+                <button class="intro__container__btn">BOOK NOW</button>
+            </div>
+        </section>
+        <section class="facilities">
+            <h1 class="facilities__title">FACILITIES</h1>
+            <h2 class="facilities__subtitle">Core Features</h2>
+            <div id="facilities__slider">                                                       
+                <div class="facilities__slider__container">
+        
+                  <div class="facilities__slider__container__item">
+                    <img class="facilities__slider__container__item__img" src="/assets/home/feature1.png">
+                    <h1 class="facilities__slider__container__item__title">Have High Rating</h1>
+                    <p class="facilities__slider__container__item__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                  </div>
+
+                </div>
+                <div class="facilities__slider__dotsLine">
+                  <span class="facilities__slider__dotsLine__dots" id="dot1" ></span>
+                  <span class="facilities__slider__dotsLine__dots" id="dot2" ></span>
+                  <span class="facilities__slider__dotsLine__dots" id="dot3" ></span>
+                  <span class="facilities__slider__dotsLine__dots" id="dot4" ></span>
+                  <span class="facilities__slider__dotsLine__dots" id="dot5" ></span>
+                  <span class="facilities__slider__dotsLine__dots" id="dot6" ></span>
+                </div> 
+            </div>  
+
+        </section>
+        <section class="menu">
+            <h1 class="menu__title">MENU</h1>
+            <h2 class="menu__subtitle">Our Foods Menu</h2>
+            <div class="menu__sliderMenu">
+                <div class="menu__sliderMenu__container1">
+                    <div class="menu__sliderMenu__container1__item">
+                        <img class="menu__sliderMenu__container1__item__img" src="/assets/home/bacon-egg.jpg" alt="">
+                        <div class="menu__sliderMenu__container1__item__description">
+                            <h1 class="menu__sliderMenu__container1__item__description__title">Eggs & Bacon</h1>
+                            <p class="menu__sliderMenu__container1__item__description__par">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                        </div>
+                    </div>
+                    <div class="menu__sliderMenu__container1__item">
+                        <img class="menu__sliderMenu__container1__item__img" src="/assets/home/coffee.jpg" alt="">
+                        <div class="menu__sliderMenu__container1__item__description">
+                            <h1 class="menu__sliderMenu__container1__item__description__title">Tea or Coffee</h1>
+                            <p class="menu__sliderMenu__container1__item__description__par">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                        </div>
+                    </div>
+                    <div class="menu__sliderMenu__container1__item">
+                        <img class="menu__sliderMenu__container1__item__img" src="/assets/home/chia.jpg" alt="">
+                        <div class="menu__sliderMenu__container1__item__description">
+                            <h1 class="menu__sliderMenu__container1__item__description__title">Chia Oatmeal</h1>
+                            <p class="menu__sliderMenu__container1__item__description__par">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__sliderMenu__container2" style="display: none;">
+                    <div class="menu__sliderMenu__container2__item">
+                        <img src="" alt="">
+                        <h1>Eggs & Bacon</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                    </div>
+                    <div class="menu__sliderMenu__container2__item">
+                        <img src="" alt="">
+                        <h1>Tea or Coffee</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                    </div>
+                    <div class="menu__sliderMenu__container2__item">
+                        <img src="" alt="">
+                        <h1>Chia Oatmeal</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+
+                <a class="menu__sliderMenu__backArrow" id="backArrow" >&#10094;</a>
+                <a class="menu__sliderMenu__forwardArrow" id="forwardArrow" >&#10095;</a>
+
+            </div>
+            <div class="menu__sliderPics">
+                <div class="menu__sliderPics__container">
+                    <div class="menu__sliderPics__container__item">
+                        <img class="menu__sliderPics__container__item__img" id="imgCarousel" src="/assets/home/restaurantMeal.jpg">
+                      </div>
             
-            <p class="">&copy;By Javier Cabañas - 2024</p>
-            <p class="">Terms of use    |    Privacy Environmental Policy</p>
+                      <div class="menu__sliderPics__container__item" style="display: none;">
+                        <img class="menu__sliderPics__container__item__img" id="imgCarousel" src="/assets/home/kitchen.jpg">
+                      </div>
+            
+                      <div class="menu__sliderPics__container__item" style="display: none;">
+                        <img class="menu__sliderPics__container__item__img" id="imgCarousel" src="/assets/home/capuccino.jpg">
+                      </div>
+                </div>
+                <div class="menu__sliderPics__dotsLine">
+                    <span class="menu__sliderPics__dotsLine__dots" id="dot1" ></span>
+                    <span class="menu__sliderPics__dotsLine__dots" id="dot2" ></span>
+                    <span class="menu__sliderPics__dotsLine__dots" id="dot3" ></span>
+                  </div> 
+            </div>
+        </section>
+        <section class="stats">
+            <div class="stats__item">
+                <img class="stats__item__img" src="/assets/home/stats1.png" alt="">
+                <h2 class="stats__item__num">84k+</h2>
+                <p class="stats__item__par">Projects are completed</p>
+            </div>
+            <div class="stats__item">
+                <img class="stats__item__img" src="/assets/home/stats2.png" alt="">
+                <h2 class="stats__item__num">10M+</h2>
+                <p class="stats__item__par">Active Backers Around World</p>
+            </div>
+            <div class="stats__item">
+                <img class="stats__item__img" src="/assets/home/stats3.png" alt="">
+                <h2 class="stats__item__num">02k+</h2>
+                <p class="stats__item__par">Categories Served</p>
+            </div>
+            <div class="stats__item">
+                <img class="stats__item__img" src="/assets/home/stats4.png" alt="">
+                <h2 class="stats__item__num">100M+</h2>
+                <p class="stats__item__par">Idea Raised Funds</p>
+            </div>
+
+        </section>
+
+        <footer class="footerContainer">
+            <div class="footerContainer__intro">
+                <div class="footerContainer__intro__container">
+                    <h1 class="footerContainer__intro__container__logo">H</h1>
+                    <p class="footerContainer__intro__container__title2"><b class="footerContainer__intro__container__title1">HOTEL</b> MIRANDA</p>
+                </div>
+                <p class="footerContainer__intro__par">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</p>
+
+                <div class="footerContainer__intro__socials">
+                    <img class="footerContainer__intro__socials__img" src="/assets/footer/facebook-logo.png" alt="">
+                    <img class="footerContainer__intro__socials__img" src="/assets/footer/twitter-logo.png" alt="">
+                    <img class="footerContainer__intro__socials__img" src="/assets/footer/behance-logo.png" alt="">
+                    <img class="footerContainer__intro__socials__img" src="/assets/footer/linkedin-logo.png" alt="">
+                    <img class="footerContainer__intro__socials__img" src="/assets/footer/youtube-logo.png" alt="">
+                </div>
+            </div>
+            <div class="footerContainer__services">
+                <h2 class="footerContainer__services__title">Services.</h2>
+                <ul>
+                    <li>Restaurant & Bar</li>
+                    <li>Swimming Pool</li>
+                    <li>Wellness & Spa</li>
+                    <li>Restaurant</li>
+                    <li>Conference Room</li>
+                    <li>Cocktail Party House</li>
+                </ul>
+                <ul>
+                    <li>Gaming Zone</li>
+                    <li>Marriage Party</li>
+                    <li>Party Planning</li>
+                    <li>Tour Consultancy</li>
+                </ul>
+            </div>
+
+            <div class="footerContainer__contact">
+                <h2 class="footerContainer__contact__title">Contact Us.</h2>
+                <div class="footerContainer__contact__item">
+                    <img class="footerContainer__contact__item__img" src="" alt="">
+                    <h1 class="footerContainer__contact__item__title">Phone Number</h1>
+                    <p class="footerContainer__contact__item__par">999999999</p>
+                </div>
+                <div class="footerContainer__contact__item">
+                    <img class="footerContainer__contact__item__img" src="" alt="">
+                    <h1 class="footerContainer__contact__item__title">Email</h1>
+                    <p class="footerContainer__contact__item__par">fakeemail1@gmail.com</p>
+                </div>
+                <div class="footerContainer__contact__item">
+                    <img class="footerContainer__contact__item__img" src="" alt="">
+                    <h1 class="footerContainer__contact__item__title">Address</h1>
+                    <p class="footerContainer__contact__item__par">Madrid, Spain.</p>
+                </div>
+            </div>
+            <div class="footerContainer__termsContainer">
+                <p class="footerContainer__termsContainer__rights">&copy;By Javier Cabañas - 2024</p>
+                <p class="footerContainer__termsContainer__terms">Terms of use    |    Privacy Environmental Policy</p>
             </div>  
         </footer>
     </body>

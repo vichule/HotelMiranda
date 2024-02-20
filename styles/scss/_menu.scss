@@ -1,0 +1,122 @@
+
+.menu{
+    padding-top: 10em;
+    background-image: url(/assets/home/menuIcon.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+
+    &__title{
+        color: #777777;
+        font-family: Archivo;
+        font-size: 1.1em;
+        font-weight: 700;
+        line-height: 1.8em;
+        letter-spacing: 0.1em;
+        margin-left: 1em;
+    }
+    &__subtitle{
+        font-family: Old Standard TT;
+        font-size: 5.5em;
+        font-weight: 400;
+        line-height: 1.1em;
+        text-align: left;
+        margin-left: 0.3em;
+        margin-bottom: 0.5em;
+    }
+    &__sliderMenu{
+
+        &__container1{
+
+            &__item{
+                display: flex;
+                margin: 1em 2em 2em 2em;
+
+                &__img{
+                    width: 10em;
+                    height: 10em;
+
+                }
+                &__description{
+                    margin-left: 3em;
+
+                    &__title{
+                        font-family: Old Standard TT;
+                        font-size: 2em;
+                        font-weight: 400;
+                        line-height: 1em;
+                        letter-spacing: -0.07em;
+                        text-align: left;
+                        margin-bottom: 0.5em;
+    
+                    }
+                    &__par{
+                        font-family: Roboto;
+                        font-size: 1em;
+                        font-weight: 400;
+                        line-height: 2em;
+                        text-align: left;
+                        width: 13em;
+    
+                    }
+                }
+                
+            }
+        }
+        &__backArrow{
+            cursor: pointer;
+            position: relative;
+            background-color: #ebebeb;
+            padding: 1em;
+            bottom: 0em;
+            left: 29em;
+        }
+        &__forwardArrow{
+            cursor: pointer;
+            position: relative;
+            background-color: #BDAC8D;
+            padding: 1em;
+            bottom: 0em;
+            left: 30em;
+
+        }
+    }
+    &__sliderPics{
+        margin: 8em 1em 8em 1em;
+
+        &__container{
+
+            &__item{
+
+                &__img{
+                    width: 35em;
+                    height: 35em;
+                }
+            }
+        }
+        &__dotsLine{
+            display: block;
+            text-align: center;
+            margin-top: 1em;
+
+            &__dots{
+                cursor: pointer;
+                height: 0.7em;
+                width: 0.7em;
+                margin: 0.2em;
+                background-color: #e3e3e2;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.5s ease;
+            }
+            &__dots:hover{
+                background-color: #BEAD8E;
+            }
+        }
+    }
+}
+
+.enable{
+    background-color: #BEAD8E;
+}
+           
