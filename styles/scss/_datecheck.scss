@@ -56,21 +56,22 @@
             margin-left: 1.5em;
             
         }
+        &__checkBtn{
+            background: #BEAD8E;
+            color: white;
+            font-family: Archivo;
+            font-size: 1em;
+            font-weight: 700;
+            line-height: 1.5em;
+            letter-spacing: 0.1em;
+            width: 25em;
+            height: 6em;
+            display: block;
+            margin-top: 5em;
+        }
     }
     
-    &__checkBtn{
-        background: #BEAD8E;
-        color: white;
-        font-family: Archivo;
-        font-size: 1em;
-        font-weight: 700;
-        line-height: 1.5em;
-        letter-spacing: 0.1em;
-        width: 25em;
-        height: 6em;
-        display: block;
-        margin-top: 5em;
-    }
+    
 }
 
 @media (width > 1000px) {
@@ -103,10 +104,13 @@
                     left: -33em;
                     
                 }
+                &__checkBtn{
+                    min-width: 25em;
+                    margin-top: 0em;
+                    margin-left: 10em;
+                }
             }
             
-            &__checkBtn{
-                min-width: 25em;
-            }
+            
         }
 }

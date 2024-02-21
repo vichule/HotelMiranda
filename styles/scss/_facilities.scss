@@ -28,6 +28,7 @@
             &__item{
                 margin-top: 3em;
                 padding: 8em 10em 5em 5em;
+                max-width: 40em;
 
                 &__img{
                     margin-bottom: 2em;
@@ -44,7 +45,7 @@
                 }
                 &__par{
                     font-family: Archivo;
-                    font-size: 1em;
+                    font-size: 1.2em;
                     font-weight: 400;
                     line-height: 2em;
                     text-align: left;
@@ -114,4 +115,28 @@
     background-repeat: no-repeat;
     background-position-x: 20em;
     background-position-y: top;
+}
+
+@media (width > 1000px) {
+    .facilities{
+        
+        
+        &__slider{
+    
+            &__container{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                padding-left: 40em;
+                
+                &__item{
+                    display: block;
+                }
+            }
+            &__dotsLine{
+                display: none;
+            }
+        }
+    }
+
 }
