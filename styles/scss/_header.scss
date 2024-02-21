@@ -1,20 +1,33 @@
 header{
-    display: flex;
-    justify-content: space-between;
+    background-color: black;
 }
 
-.header__container1{
+.header__container{
     display: flex;
-    min-height: 10em;
-    padding-left: 1em;
-}
-
-.header__container2{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    min-width: 8em;
-    padding-right: 2em;
+    background-color: white;
+    align-items: center;
+
+    &__item1{
+        display: flex;
+        min-height: 10em;
+        padding-left: 1em;
+    }
+    &__item2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        min-width: 8em;
+        padding-right: 2em;
+    }
+    &__navbar{
+        list-style-type: none;
+        
+    }
+    &__navbar a{
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .header__button{
@@ -28,4 +41,56 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     min-width: 15em;
+}
+
+#headerPar{
+    color: white;
+    font-family: Roboto;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 2em;
+    text-align: left;
+    display: none;
+
+}
+@media (width > 1000px) {
+
+    #menuBtn{
+        display: none;
+    }
+
+    #headerPar{
+        display: block;
+        position: absolute;
+        bottom: 10em;
+    }
+
+    header{
+        padding: 5em 20em 0em 20em;
+    }
+
+    .header__container{
+        position: relative;
+        top: 5em;
+       
+        &__navbar{
+            display: flex;
+            justify-content: space-between;
+            width: 30em;
+            
+        }
+        &__navbar li{
+            font-family: Archivo;
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+    }
+
+    .header__button{
+        margin-right: 1.5em;
+    }
+    .header__button img{
+        border: 1px solid lightgrey;
+        padding: 1em;
+    }
 }

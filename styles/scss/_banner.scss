@@ -51,3 +51,21 @@
         margin-top: 2em;
     }
 }
+
+@media (width > 1000px) {
+    .banner{
+        padding: 15em 1.5em 8em 28.5em;
+    
+        &__title{
+            max-width: 25em;
+    
+        }
+        &__subtitle{
+            font-size: 7.6em;
+            max-width: 7em;
+            margin-top: 0.3em;
+    
+        }
+        
+    }
+}
