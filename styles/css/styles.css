@@ -1120,5 +1120,190 @@ header {
     padding: 1em 12em 1em 12em;
   }
 }
+.bannerGeneric {
+  background-color: #333333;
+  color: white;
+  padding: 8em 1.5em 8em 1.5em;
+}
+.bannerGeneric__title {
+  font-family: Archivo;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
+  text-align: left;
+  max-width: 15em;
+}
+.bannerGeneric__subtitle {
+  font-family: Old Standard TT;
+  font-size: 5.6em;
+  font-weight: 400;
+  line-height: 1em;
+  text-align: left;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+.bannerGeneric__nav {
+  background-color: white;
+  max-width: 10em;
+  min-height: 5em;
+  position: relative;
+  top: 8em;
+  left: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em 0.5em 1em 0.5em;
+}
+.bannerGeneric__nav a {
+  list-style-type: none;
+  text-decoration: none;
+  font-family: Archivo;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+.bannerGeneric__nav p {
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#homeBtn {
+  color: black;
+}
+
+#currentBtn {
+  color: #BEAD8E;
+}
+
+.aboutintro__video {
+  margin: 5em 0em 3em 3.5em;
+  min-height: 20em;
+}
+.aboutintro__par {
+  font-family: Old Standard TT;
+  font-size: 3em;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  text-align: center;
+  margin: 0em 1em 1em 1em;
+}
+.aboutintro__featuresContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80em;
+  justify-content: space-around;
+  margin: 5em 0em 5em 0em;
+}
+.aboutintro__featuresContainer__item {
+  width: 15em;
+  height: 15em;
+  display: grid;
+  align-items: center;
+  align-content: space-evenly;
+  justify-content: center;
+  justify-items: center;
+}
+.aboutintro__featuresContainer__item p {
+  font-family: Archivo;
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+
+.gold {
+  background-color: #BEAD8E;
+  color: white;
+}
+
+.restaurant__img {
+  width: 30em;
+  height: 25em;
+  margin: 2em 0em 3.5em 3.5em;
+}
+.restaurant__container {
+  padding: 0em 3em 0em 3em;
+}
+.restaurant__container__title {
+  color: #777777;
+  font-family: Archivo;
+  font-size: 1.1em;
+  font-weight: 700;
+  line-height: 1.8em;
+  letter-spacing: 0.1em;
+}
+.restaurant__container__subtitle {
+  font-family: Old Standard TT;
+  font-size: 4em;
+  font-weight: 400;
+  line-height: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  max-width: 10em;
+}
+.restaurant__container__par {
+  color: #777777;
+  font-family: Archivo;
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.7em;
+  text-align: left;
+  max-width: 21em;
+}
+.restaurant__container__btn {
+  background: #BEAD8E;
+  color: white;
+  font-family: Archivo;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  width: 20em;
+  height: 5em;
+  border: none;
+  margin: 2em 0em 5em 0em;
+}
+
+.counter {
+  padding: 0em 5em 0em 3em;
+}
+.counter__title {
+  color: #777777;
+  font-family: Archivo;
+  font-size: 1.1em;
+  font-weight: 700;
+  line-height: 1.8em;
+  letter-spacing: 0.1em;
+}
+.counter__subtitle {
+  font-family: Old Standard TT;
+  font-size: 4em;
+  font-weight: 400;
+  line-height: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  max-width: 5em;
+}
+.counter__facts__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5em;
+}
+.counter__facts__item__description__num {
+  font-family: Old Standard TT;
+  font-size: 4em;
+  font-weight: 400;
+  line-height: 1em;
+}
+.counter__facts__item__description__par {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: -0.018em;
+  color: #777777;
+}
 
 /*# sourceMappingURL=styles.css.map */
