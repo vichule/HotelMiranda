@@ -6,7 +6,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Old+Standard+TT&family=Roboto&display=swap" rel="stylesheet"><link href="styles.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- script -->
         <script src="/js/script.js" type="text/javascript" defer></script>
+        <!-- swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- flickity -->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"/>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </head>
     <body>
         <header>
@@ -95,14 +102,30 @@
             <h1 class="homerooms__title">ROOMS</h1>
             <h2 class="homerooms__subtitle">Hand Picked Rooms</h2>
             <img src="/assets/home/frame_rooms.jpg" alt="" class="homerooms__complements">
-            <div class="homerooms__slider">
-                <div class="homerooms__slider__container">
-                    <div class="homerooms__slider__container_item" id="containers">
+            <div class="swiper homerooms__slider">
+                <div class="swiper-wrapper homerooms__slider__container">
+                    <div class="swiper-slide homerooms__slider__container_item">
                         <img id="roomsImg" src="/assets/home/minimal_room.jpg" alt="">
                     </div>
-                    <a class="homerooms__slider__container__backArrow" id="backArrow" >&#10094;</a>
-                    <a class="homerooms__slider__container__forwardArrow" id="forwardArrow" >&#10095;</a>
+                    <div class="swiper-slide homerooms__slider__container_item">
+                        <img id="roomsImg" src="/assets/home/minimal_room.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide homerooms__slider__container_item">
+                        <img id="roomsImg" src="/assets/home/minimal_room.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide homerooms__slider__container_item">
+                        <img id="roomsImg" src="/assets/home/minimal_room.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide homerooms__slider__container_item">
+                        <img id="roomsImg" src="/assets/home/minimal_room.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide homerooms__slider__container_item">
+                        <img id="roomsImg" src="/assets/home/minimal_room.jpg" alt="">
+                    </div>
+                    
                 </div>
+                <div class="swiper-button-next homerooms__slider__container__backArrow"></div>
+                <div class=" swiper-button-prev homerooms__slider__container__forwardArrow"></div>
                 <div class="homerooms__slider__descriptions">
                     <div class="homerooms__slider__descriptions__item" id="description1" >
                         <h1 class="homerooms__slider__descriptions__item__title">Minimal Duplex Room</h1>
@@ -110,7 +133,6 @@
                         <span class="homerooms__slider__descriptions__item__price">$345/Night</span>
                     </div>
                 </div> 
-
             </div>
         </section>
         <section class="intro">
@@ -127,105 +149,101 @@
         <section class="facilities">
             <h1 class="facilities__title">FACILITIES</h1>
             <h2 class="facilities__subtitle">Core Features</h2>
-            <div id="facilities__slider">                                                       
-                <div class="facilities__slider__container">
+            <div id="facilities__slider" class="swiper facilities__slider" >                                                       
+                <div class="swiper-wrapper facilities__slider__container"  >
         
-                  <div class="facilities__slider__container__item back01">
+                  <div class="swiper-slide facilities__slider__container__item back01 ">
                     <img class="facilities__slider__container__item__img" src="/assets/home/feature1.png">
                     <h1 class="facilities__slider__container__item__title">Have High Rating</h1>
                     <p class="facilities__slider__container__item__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
                   </div>
-                  <div class="facilities__slider__container__item back02 hidden">
+                  <div class="swiper-slide facilities__slider__container__item back02 ">
                     <img class="facilities__slider__container__item__img" src="/assets/home/feature2.png">
                     <h1 class="facilities__slider__container__item__title">Quiet Hours</h1>
                     <p class="facilities__slider__container__item__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
                   </div>
-                  <div class="facilities__slider__container__item back03 hidden">
+                  <div class="swiper-slide facilities__slider__container__item back03 ">
                     <img class="facilities__slider__container__item__img" src="/assets/home/feature3.png">
                     <h1 class="facilities__slider__container__item__title">Best Locations</h1>
                     <p class="facilities__slider__container__item__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
                   </div>
-                  <div class="facilities__slider__container__item back04 hidden">
+                  <div class="swiper-slide facilities__slider__container__item back04 ">
                     <img class="facilities__slider__container__item__img" src="/assets/home/feature4.png">
                     <h1 class="facilities__slider__container__item__title">Free Cancellation</h1>
                     <p class="facilities__slider__container__item__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
                   </div>
-                  <div class="facilities__slider__container__item back05 hidden">
+                  <div class="swiper-slide facilities__slider__container__item back05 ">
                     <img class="facilities__slider__container__item__img" src="/assets/home/feature5.png">
                     <h1 class="facilities__slider__container__item__title">Ppayment Options</h1>
                     <p class="facilities__slider__container__item__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
                   </div>
-                  <div class="facilities__slider__container__item back06 hidden">
+                  <div class="swiper-slide facilities__slider__container__item back06 ">
                     <img class="facilities__slider__container__item__img" src="/assets/home/feature6.png">
                     <h1 class="facilities__slider__container__item__title">Special Offers</h1>
                     <p class="facilities__slider__container__item__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
                   </div>
 
                 </div>
-                <div class="facilities__slider__dotsLine">
-                  <span class="facilities__slider__dotsLine__dots" id="dot1" ></span>
-                  <span class="facilities__slider__dotsLine__dots" id="dot2" ></span>
-                  <span class="facilities__slider__dotsLine__dots" id="dot3" ></span>
-                  <span class="facilities__slider__dotsLine__dots" id="dot4" ></span>
-                  <span class="facilities__slider__dotsLine__dots" id="dot5" ></span>
-                  <span class="facilities__slider__dotsLine__dots" id="dot6" ></span>
-                </div> 
+                <div class="swiper-pagination"></div>
             </div>  
 
         </section>
         <section class="menu">
             <h1 class="menu__title">MENU</h1>
             <h2 class="menu__subtitle">Our Foods Menu</h2>
-            <div class="menu__sliderMenu">
-                <div class="menu__sliderMenu__container1">
-                    <div class="menu__sliderMenu__container1__item">
-                        <img class="menu__sliderMenu__container1__item__img" src="/assets/home/bacon-egg.jpg" alt="">
-                        <div class="menu__sliderMenu__container1__item__description">
-                            <h1 class="menu__sliderMenu__container1__item__description__title">Eggs & Bacon</h1>
-                            <p class="menu__sliderMenu__container1__item__description__par">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+            <div class="swipper menu__sliderMenu">
+                <div class="swiper-wrapper" style="max-width: 20em;">
+                    <div class="swiper-slide menu__sliderMenu__container1">
+                        <div class=" menu__sliderMenu__container1__item">
+                            <img class="menu__sliderMenu__container1__item__img" src="/assets/home/bacon-egg.jpg" alt="">
+                            <div class="menu__sliderMenu__container1__item__description">
+                                <h1 class="menu__sliderMenu__container1__item__description__title">Eggs & Bacon</h1>
+                                <p class="menu__sliderMenu__container1__item__description__par">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                        <div class="menu__sliderMenu__container1__item">
+                            <img class="menu__sliderMenu__container1__item__img" src="/assets/home/coffee.jpg" alt="">
+                            <div class="menu__sliderMenu__container1__item__description">
+                                <h1 class="menu__sliderMenu__container1__item__description__title">Tea or Coffee</h1>
+                                <p class="menu__sliderMenu__container1__item__description__par">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                        <div class="menu__sliderMenu__container1__item">
+                            <img class="menu__sliderMenu__container1__item__img" src="/assets/home/chia.jpg" alt="">
+                            <div class="menu__sliderMenu__container1__item__description">
+                                <h1 class="menu__sliderMenu__container1__item__description__title">Chia Oatmeal</h1>
+                                <p class="menu__sliderMenu__container1__item__description__par">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu__sliderMenu__container1__item">
-                        <img class="menu__sliderMenu__container1__item__img" src="/assets/home/coffee.jpg" alt="">
-                        <div class="menu__sliderMenu__container1__item__description">
-                            <h1 class="menu__sliderMenu__container1__item__description__title">Tea or Coffee</h1>
-                            <p class="menu__sliderMenu__container1__item__description__par">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                    <div class="swiper-slide menu__sliderMenu__container2 hidden" >
+                        <div class="menu__sliderMenu__container2__item">
+                            <img class="menu__sliderMenu__container2__item__img" src="/assets/home/parfait.jpg" alt="">
+                            <div class="menu__sliderMenu__container2__item__description">
+                                <h1 class="menu__sliderMenu__container2__item__description__title">Fruit Parfait</h1>
+                                <p class="menu__sliderMenu__container2__item__description__par">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                        <div class="menu__sliderMenu__container2__item">
+                            <img class="menu__sliderMenu__container2__item__img" src="/assets/home/marmalade.jpg" alt="">
+                            <div class="menu__sliderMenu__container2__item__description">
+                                <h1 class="menu__sliderMenu__container2__item__description__title">Marmalade Selection</h1>
+                                <p class="menu__sliderMenu__container2__item__description__par">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                        <div class="menu__sliderMenu__container2__item">
+                            <img class="menu__sliderMenu__container2__item__img" src="/assets/home/cheese.jpg" alt="">
+                            <div class="menu__sliderMenu__container2__item__description">
+                                <h1 class="menu__sliderMenu__container2__item__description__title">Cheese Plate</h1>
+                                <p class="menu__sliderMenu__container2__item__description__par">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu__sliderMenu__container1__item">
-                        <img class="menu__sliderMenu__container1__item__img" src="/assets/home/chia.jpg" alt="">
-                        <div class="menu__sliderMenu__container1__item__description">
-                            <h1 class="menu__sliderMenu__container1__item__description__title">Chia Oatmeal</h1>
-                            <p class="menu__sliderMenu__container1__item__description__par">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </div>
+    
                 </div>
-                <div class="menu__sliderMenu__container2 hidden" >
-                    <div class="menu__sliderMenu__container2__item">
-                        <img class="menu__sliderMenu__container2__item__img" src="/assets/home/parfait.jpg" alt="">
-                        <div class="menu__sliderMenu__container2__item__description">
-                            <h1 class="menu__sliderMenu__container2__item__description__title">Fruit Parfait</h1>
-                            <p class="menu__sliderMenu__container2__item__description__par">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </div>
-                    <div class="menu__sliderMenu__container2__item">
-                        <img class="menu__sliderMenu__container2__item__img" src="/assets/home/marmalade.jpg" alt="">
-                        <div class="menu__sliderMenu__container2__item__description">
-                            <h1 class="menu__sliderMenu__container2__item__description__title">Marmalade Selection</h1>
-                            <p class="menu__sliderMenu__container2__item__description__par">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </div>
-                    <div class="menu__sliderMenu__container2__item">
-                        <img class="menu__sliderMenu__container2__item__img" src="/assets/home/cheese.jpg" alt="">
-                        <div class="menu__sliderMenu__container2__item__description">
-                            <h1 class="menu__sliderMenu__container2__item__description__title">Cheese Plate</h1>
-                            <p class="menu__sliderMenu__container2__item__description__par">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </div>
-                </div>
-
                 <a class="menu__sliderMenu__backArrow" id="backArrow" >&#10094;</a>
                 <a class="menu__sliderMenu__forwardArrow" id="forwardArrow" >&#10095;</a>
+                
 
             </div>
             <div class="menu__sliderPics">
@@ -341,5 +359,6 @@
                 <p class="footerContainer__termsContainer__terms">Terms of use    |    Privacy Environmental Policy</p>
             </div>  
         </footer>
+        <script src="/js/swiper.js" type="module"></script>
     </body>
 </html>

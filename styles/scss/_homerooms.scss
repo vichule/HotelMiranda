@@ -36,6 +36,9 @@
                 padding: 1em;
                 bottom: 14em;
                 left: 0em;
+                width: 3em;
+                height: 3em;
+                z-index: 20;
             }
             &__forwardArrow{
                 cursor: pointer;
@@ -44,7 +47,9 @@
                 padding: 1em;
                 bottom: 14em;
                 left: 32.25em;
-
+                width: 3em;
+                height: 3em;
+                z-index: 20;
 
             }
         }
@@ -93,5 +98,14 @@
     width: 100%;
     height: 25em;
     margin-top: -3em;
+}
+
+@media (width > 1000px) {
+
+    #roomsImg{
+        width: 100%;
+        height: 35em;
+    }
+    
 }
 

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "flickity": "^3.0.0",
     "sass": "^1.71.0",
     "swiper": "^11.0.6"
   },
@@ -7,7 +8,6 @@
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass",

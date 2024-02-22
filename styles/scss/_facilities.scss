@@ -24,7 +24,7 @@
     &__slider{
 
         &__container{
-
+            
             &__item{
                 margin-top: 3em;
                 padding: 8em 10em 5em 5em;
@@ -76,6 +76,7 @@
     }
 }
 
+
 .enable{
     background-color: #BEAD8E;
 }
@@ -117,17 +118,21 @@
     background-position-y: top;
 }
 
+
+
+
 @media (width > 1000px) {
     .facilities{
         
         
         &__slider{
+            max-width: 120em;
+            text-align: center;
     
             &__container{
                 display: flex;
                 flex-wrap: wrap;
                 flex-direction: row;
-                padding-left: 40em;
                 
                 &__item{
                     display: block;
@@ -139,4 +144,15 @@
         }
     }
 
+    /*.flickity-slider{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-left: 40em;
+        position: relative;
+    }
+    .flickity-page-dots{
+        display: none;
+    }*/
+    
 }
