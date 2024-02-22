@@ -43,6 +43,26 @@ header {
   color: black;
 }
 
+.header__mobile-menu {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: white;
+  padding: 3em 1em 1em 3em;
+  box-shadow: 0px 4px 5px 6px rgba(0, 0, 0, 0.2901960784);
+}
+
+.header__mobile-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.header__mobile-menu li {
+  font-family: Archivo;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 1.5em;
+}
+
 .header__button {
   background: none;
   border: none;
@@ -67,7 +87,10 @@ header {
 }
 
 @media (width > 1000px) {
-  #menuBtn {
+  #menuClosed {
+    display: none;
+  }
+  #menuOpened {
     display: none;
   }
   #headerPar {
@@ -98,6 +121,9 @@ header {
   .header__button img {
     border: 1px solid lightgrey;
     padding: 1em;
+  }
+  .header__mobile-menu {
+    display: none;
   }
 }
 .banner {
