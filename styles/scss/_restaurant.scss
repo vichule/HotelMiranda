@@ -1,9 +1,10 @@
 .restaurant{
-
+    display: grid;
+    justify-items: center;
     &__img{
         width: 30em;
         height: 25em;
-        margin: 2em 0em 3.5em 3.5em;
+        margin: 2em 0em 3.5em 0em;
     }
 
     &__container{
@@ -47,6 +48,34 @@
             height: 5em;
             border: none;
             margin: 2em 0em 5em 0em;
+        }
+    }
+}
+
+
+@media (width > 1000px) {
+
+    .restaurant{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10em;
+        padding-left: 15em;
+
+        &__img{
+            width: 50em;
+            height: 20%;
+        }
+    
+        &__container{
+            margin-left: 5em;
+
+            &__subtitle{
+                max-width: 11em;
+            }
+            &__par{
+                max-width: 34em;
+            }
         }
     }
 }

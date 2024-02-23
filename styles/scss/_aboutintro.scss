@@ -1,7 +1,8 @@
 .aboutintro{
-
+    display: grid;
+    justify-items: center;
     &__video{
-        margin: 5em 0em 3em 3.5em;
+        margin: 5em 0em 3em 0em;
         min-height: 20em;
     }
     &__par{
@@ -41,4 +42,33 @@
 .gold{
     background-color: #BEAD8E;
     color: white;
+}
+
+#bbq{
+    display: none;
+}
+
+@media (width > 1000px) {
+
+    .aboutintro{
+
+        &__video{
+            width: 100em;
+            height: 50em;
+            margin-top: 15em;
+        }
+        &__par{
+            max-width: 14em;
+            font-size: 5em;
+        }
+        &__featuresContainer{
+            width: 50%;
+            max-width: 50%;
+            #bbq{
+                display: grid;
+            }
+
+        }
+    }
+
 }

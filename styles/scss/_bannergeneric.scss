@@ -25,7 +25,7 @@
     }
     &__nav{
         background-color: white;
-        max-width: 10em;
+        max-width: 15em;
         min-height: 5em;
         position: relative;
         top: 8em;
@@ -56,4 +56,28 @@
 
 #currentBtn{
     color: #BEAD8E;
+}
+
+
+@media (width > 1000px) {
+    .bannerGeneric{
+        padding: 15em 1.5em 8em 28.5em;
+        height: 40em;
+    
+        &__title{
+            max-width: 25em;
+    
+        }
+        &__subtitle{
+            font-size: 7.6em;
+            max-width: 7em;
+            margin-top: 0.3em;
+    
+        }
+        &__nav{
+            left: 65%;
+            top: 3em;
+        }
+        
+    }
 }

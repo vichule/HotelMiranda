@@ -1,6 +1,7 @@
 
 .facilities{
     padding-top: 5em;
+    padding-bottom: 5em;
     margin-bottom: 5em;
 
     &__title{
@@ -22,13 +23,16 @@
         text-align: center;
     }
     &__slider{
-
+        max-width: 40em;
         &__container{
             
             &__item{
                 margin-top: 3em;
                 padding: 8em 10em 5em 5em;
                 max-width: 40em;
+                background-repeat: no-repeat;
+                background-position-x: 20em;
+                background-position-y: top;
 
                 &__img{
                     margin-bottom: 2em;
@@ -53,72 +57,63 @@
                 }
             }
         }
-        &__dotsLine{
-            position: relative;
-            bottom: 2em;
-            display: block;
-            text-align: center;
-
-            &__dots{
-                cursor: pointer;
-                height: 0.7em;
-                width: 0.7em;
-                margin: 0.2em;
-                background-color: #e3e3e2;
-                border-radius: 50%;
-                display: inline-block;
-                transition: background-color 0.5s ease;
-            }
-            &__dots:hover{
-                background-color: #BEAD8E;
-            }
-        }
+        
     }
 }
 
 
-.enable{
-    background-color: #BEAD8E;
-}
-
 .back01{
     background-image: url(/assets/home/01.png);
-    background-repeat: no-repeat;
-    background-position-x: 20em;
-    background-position-y: top;
+    
 }
 .back02{
     background-image: url(/assets/home/02.png);
-    background-repeat: no-repeat;
-    background-position-x: 20em;
-    background-position-y: top;
 }
 .back03{
     background-image: url(/assets/home/03.png);
-    background-repeat: no-repeat;
-    background-position-x: 20em;
-    background-position-y: top;
 }
 .back04{
     background-image: url(/assets/home/04.png);
-    background-repeat: no-repeat;
-    background-position-x: 20em;
-    background-position-y: top;
 }
 .back05{
     background-image: url(/assets/home/05.png);
-    background-repeat: no-repeat;
-    background-position-x: 20em;
-    background-position-y: top;
 }
 .back06{
     background-image: url(/assets/home/06.png);
-    background-repeat: no-repeat;
-    background-position-x: 20em;
-    background-position-y: top;
 }
 
+.dark{
+    background-color: #222222;
+    color: white;
+}
 
+.darkLight{
+    background-color: #292929;
+}
+
+.backB01{
+    background-image: url(/assets/about/01.png);
+}
+
+.backB02{
+    background-image: url(/assets/about/02.png);
+}
+
+.backB03{
+    background-image: url(/assets/about/03.png);
+}
+
+.backB04{
+    background-image: url(/assets/about/04.png);
+}
+
+.backB05{
+    background-image: url(/assets/about/05.png);
+}
+
+.backB06{
+    background-image: url(/assets/about/06.png);
+}
 
 
 @media (width > 1000px) {
@@ -136,6 +131,8 @@
                 
                 &__item{
                     display: block;
+                    max-width: 37em;
+                    margin-right: 3em;
                 }
             }
             &__dotsLine{

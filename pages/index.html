@@ -12,8 +12,6 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <!-- flickity -->
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"/>
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </head>
     <body>
         <header>
@@ -246,25 +244,26 @@
                 
 
             </div>
-            <div class="menu__sliderPics">
-                <div class="menu__sliderPics__container">
-                    <div class="menu__sliderPics__container__item">
+            <div class="menu__sliderPics swiper" >
+                <div class="menu__sliderPics__container swiper-wrapper">
+                    <div class="menu__sliderPics__container__item swiper-slide">
                         <img class="menu__sliderPics__container__item__img" id="imgCarousel" src="/assets/home/restaurantMeal.jpg">
                       </div>
             
-                      <div class="menu__sliderPics__container__item hidden" >
+                      <div class="menu__sliderPics__container__item swiper-slide " >
                         <img class="menu__sliderPics__container__item__img" id="imgCarousel" src="/assets/home/kitchen.jpg">
                       </div>
             
-                      <div class="menu__sliderPics__container__item hidden" >
+                      <div class="menu__sliderPics__container__item swiper-slide " >
                         <img class="menu__sliderPics__container__item__img" id="imgCarousel" src="/assets/home/capuccino.jpg">
                       </div>
                 </div>
-                <div class="menu__sliderPics__dotsLine">
+                <!--<div class="menu__sliderPics__dotsLine">
                     <span class="menu__sliderPics__dotsLine__dots" id="dot1" ></span>
                     <span class="menu__sliderPics__dotsLine__dots" id="dot2" ></span>
                     <span class="menu__sliderPics__dotsLine__dots" id="dot3" ></span>
-                  </div> 
+                  </div>--> 
+                <div class="swiper-pagination "></div>
             </div>
         </section>
         <section class="stats">

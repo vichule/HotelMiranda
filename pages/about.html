@@ -6,7 +6,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Old+Standard+TT&family=Roboto&display=swap" rel="stylesheet"><link href="styles.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- script -->
         <script src="/js/script.js" type="text/javascript" defer></script>
+        <!-- swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </head>
     <body>
         <header>
@@ -67,6 +71,10 @@
                     <img src="/assets/about/guide.png" alt="">
                     <p>CITY GUIDE</p>
                 </div>
+                <div class="aboutintro__featuresContainer__item" id="bbq">
+                    <img src="/assets/about/bbq.png" alt="">
+                    <p>BBQ PARTY</p>
+                </div>
                 <div class="aboutintro__featuresContainer__item">
                     <img src="/assets/about/luxury.png" alt="">
                     <p>LUXURY ROOM</p>
@@ -82,6 +90,49 @@
                 <p class="restaurant__container__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
                 <button class="restaurant__container__btn">TAKE A TOUR</button>
             </div>
+        </section>
+
+        <section class="facilities dark">
+            <h1 class="facilities__title">FACILITIES</h1>
+            <h2 class="facilities__subtitle">Core Features</h2>
+            <div id="facilities__slider" class="swiper facilities__slider" >                                                       
+                <div class="swiper-wrapper facilities__slider__container"  >
+        
+                  <div class="swiper-slide facilities__slider__container__item darkLight backB01 ">
+                    <img class="facilities__slider__container__item__img" src="/assets/home/feature1.png">
+                    <h1 class="facilities__slider__container__item__title">Have High Rating</h1>
+                    <p class="facilities__slider__container__item__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                  </div>
+                  <div class="swiper-slide facilities__slider__container__item darkLight backB02 ">
+                    <img class="facilities__slider__container__item__img" src="/assets/home/feature2.png">
+                    <h1 class="facilities__slider__container__item__title">Quiet Hours</h1>
+                    <p class="facilities__slider__container__item__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                  </div>
+                  <div class="swiper-slide facilities__slider__container__item darkLight backB03 ">
+                    <img class="facilities__slider__container__item__img" src="/assets/home/feature3.png">
+                    <h1 class="facilities__slider__container__item__title">Best Locations</h1>
+                    <p class="facilities__slider__container__item__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                  </div>
+                  <div class="swiper-slide facilities__slider__container__item darkLight backB04 ">
+                    <img class="facilities__slider__container__item__img" src="/assets/home/feature4.png">
+                    <h1 class="facilities__slider__container__item__title">Free Cancellation</h1>
+                    <p class="facilities__slider__container__item__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                  </div>
+                  <div class="swiper-slide facilities__slider__container__item darkLight backB05 ">
+                    <img class="facilities__slider__container__item__img" src="/assets/home/feature5.png">
+                    <h1 class="facilities__slider__container__item__title">Ppayment Options</h1>
+                    <p class="facilities__slider__container__item__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                  </div>
+                  <div class="swiper-slide facilities__slider__container__item darkLight backB06 ">
+                    <img class="facilities__slider__container__item__img" src="/assets/home/feature6.png">
+                    <h1 class="facilities__slider__container__item__title">Special Offers</h1>
+                    <p class="facilities__slider__container__item__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                  </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>  
+
         </section>
 
         <section class="counter">
@@ -113,75 +164,89 @@
                     <img src="/assets/about/arrow.png" alt="">
                 </div>
             </div>
+
+
+            <div class="swiper counter__slide">
+                <div class="swiper-wrapper" >
+                  <div class="swiper-slide"><img id="counterImg" src="/assets/about/counter1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img id="counterImg" src="/assets/about/counter2.jpg" alt=""></div>
+                  
+                </div>
+                <div class="swiper-pagination"></div>
+              
+              </div>
         </section>
 
-<footer class="footerContainer">
-    <div class="footerContainer__main">
-        <div class="footerContainer__main__intro">
-            <div class="footerContainer__main__intro__container">
-                <h1 class="footerContainer__main__intro__container__logo">H</h1>
-                <p class="footerContainer__main__intro__container__title2"><b class="footerContainer__main__intro__container__title1">HOTEL</b> MIRANDA</p>
-            </div>
-            <p class="footerContainer__main__intro__par">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</p>
+        
 
-            <div class="footerContainer__main__intro__socials">
-                <img class="footerContainer__main__intro__socials__img" src="/assets/footer/facebook-logo.png" alt="">
-                <img class="footerContainer__main__intro__socials__img" src="/assets/footer/twitter-logo.png" alt="">
-                <img class="footerContainer__main__intro__socials__img" src="/assets/footer/behance-logo.png" alt="">
-                <img class="footerContainer__main__intro__socials__img" src="/assets/footer/linkedin-logo.png" alt="">
-                <img class="footerContainer__main__intro__socials__img" src="/assets/footer/youtube-logo.png" alt="">
-            </div>
-        </div>
-        <div class="footerContainer__main__services">
-            <h2 class="footerContainer__main__services__title">Services.</h2>
-            <div class="footerContainer__main__services__listContainer">
-                <ul class="footerContainer__main__services__listContainer__list">
-                    <li>Restaurant & Bar</li>
-                    <li>Swimming Pool</li>
-                    <li>Wellness & Spa</li>
-                    <li>Restaurant</li>
-                    <li>Conference Room</li>
-                    <li>Cocktail Party House</li>
-                </ul>
-                <ul class="footerContainer__main__services__listContainer__list">
-                    <li>Gaming Zone</li>
-                    <li>Marriage Party</li>
-                    <li>Party Planning</li>
-                    <li>Tour Consultancy</li>
-                </ul>
-            </div>
-            
-        </div>
+        <footer class="footerContainer">
+            <div class="footerContainer__main">
+                <div class="footerContainer__main__intro">
+                    <div class="footerContainer__main__intro__container">
+                        <h1 class="footerContainer__main__intro__container__logo">H</h1>
+                        <p class="footerContainer__main__intro__container__title2"><b class="footerContainer__main__intro__container__title1">HOTEL</b> MIRANDA</p>
+                    </div>
+                    <p class="footerContainer__main__intro__par">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</p>
 
-        <div class="footerContainer__main__contact">
-            <h2 class="footerContainer__main__contact__title">Contact Us.</h2>
-            <div class="footerContainer__main__contact__item">
-                <img class="footerContainer__main__contact__item__img" src="/assets/footer/phone-icon.png" alt="">
-                <div class="footerContainer__main__contact__item__description">
-                    <h1 class="footerContainer__main__contact__item__description__title">Phone Number</h1>
-                    <p class="footerContainer__main__contact__item__description__par">999999999</p>
+                    <div class="footerContainer__main__intro__socials">
+                        <img class="footerContainer__main__intro__socials__img" src="/assets/footer/facebook-logo.png" alt="">
+                        <img class="footerContainer__main__intro__socials__img" src="/assets/footer/twitter-logo.png" alt="">
+                        <img class="footerContainer__main__intro__socials__img" src="/assets/footer/behance-logo.png" alt="">
+                        <img class="footerContainer__main__intro__socials__img" src="/assets/footer/linkedin-logo.png" alt="">
+                        <img class="footerContainer__main__intro__socials__img" src="/assets/footer/youtube-logo.png" alt="">
+                    </div>
+                </div>
+                <div class="footerContainer__main__services">
+                    <h2 class="footerContainer__main__services__title">Services.</h2>
+                    <div class="footerContainer__main__services__listContainer">
+                        <ul class="footerContainer__main__services__listContainer__list">
+                            <li>Restaurant & Bar</li>
+                            <li>Swimming Pool</li>
+                            <li>Wellness & Spa</li>
+                            <li>Restaurant</li>
+                            <li>Conference Room</li>
+                            <li>Cocktail Party House</li>
+                        </ul>
+                        <ul class="footerContainer__main__services__listContainer__list">
+                            <li>Gaming Zone</li>
+                            <li>Marriage Party</li>
+                            <li>Party Planning</li>
+                            <li>Tour Consultancy</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <div class="footerContainer__main__contact">
+                    <h2 class="footerContainer__main__contact__title">Contact Us.</h2>
+                    <div class="footerContainer__main__contact__item">
+                        <img class="footerContainer__main__contact__item__img" src="/assets/footer/phone-icon.png" alt="">
+                        <div class="footerContainer__main__contact__item__description">
+                            <h1 class="footerContainer__main__contact__item__description__title">Phone Number</h1>
+                            <p class="footerContainer__main__contact__item__description__par">999999999</p>
+                        </div>
+                    </div>
+                    <div class="footerContainer__main__contact__item">
+                        <img class="footerContainer__main__contact__item__img" src="/assets/footer/email-icon.png" alt="">
+                        <div class="footerContainer__main__contact__item__description">
+                            <h1 class="footerContainer__main__contact__item__description__title">Email</h1>
+                            <p class="footerContainer__main__contact__item__description__par">fakeemail1@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="footerContainer__main__contact__item">
+                        <img class="footerContainer__main__contact__item__img" src="/assets/footer/address-icon.png" alt="">
+                        <div class="footerContainer__main__contact__item__description">
+                            <h1 class="footerContainer__main__contact__item__description__title">Address</h1>
+                            <p class="footerContainer__main__contact__item__description__par">Madrid, Spain.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="footerContainer__main__contact__item">
-                <img class="footerContainer__main__contact__item__img" src="/assets/footer/email-icon.png" alt="">
-                <div class="footerContainer__main__contact__item__description">
-                    <h1 class="footerContainer__main__contact__item__description__title">Email</h1>
-                    <p class="footerContainer__main__contact__item__description__par">fakeemail1@gmail.com</p>
-                </div>
-            </div>
-            <div class="footerContainer__main__contact__item">
-                <img class="footerContainer__main__contact__item__img" src="/assets/footer/address-icon.png" alt="">
-                <div class="footerContainer__main__contact__item__description">
-                    <h1 class="footerContainer__main__contact__item__description__title">Address</h1>
-                    <p class="footerContainer__main__contact__item__description__par">Madrid, Spain.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footerContainer__termsContainer">
-        <p class="footerContainer__termsContainer__rights">&copy;By Javier Cabañas - 2024</p>
-        <p class="footerContainer__termsContainer__terms">Terms of use    |    Privacy Environmental Policy</p>
-    </div>  
-</footer>
-</body>
+            <div class="footerContainer__termsContainer">
+                <p class="footerContainer__termsContainer__rights">&copy;By Javier Cabañas - 2024</p>
+                <p class="footerContainer__termsContainer__terms">Terms of use    |    Privacy Environmental Policy</p>
+            </div>  
+        </footer>
+        <script src="/js/swiper.js" type="module"></script>
+    </body>
 </html>

@@ -99,12 +99,60 @@ window.addEventListener('resize', function() {
       480: {
         slidesPerView: 1,
       },
-      768: {
+      1000: {
           slidesPerView: 2,
       },
     },
   });
 
+  
+  const menuPicsSwiper = new Swiper(".menu__sliderPics", {
+    slidesPerView: 1,
+    loop: true,
+    speed: 1000,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+      },
+     breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1,
+      },
+      1000:{
+        slidesPerView: 3,
+      }
+    },
+  });
+
+  const counterSwiper = new Swiper(".counter__slide", {
+    slidesPerView: 1,
+    loop: true,
+    speed: 1000,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+      },
+     breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1000:{
+        slidesPerView: 2,
+      }
+    },
+  });
   
 
   /*const featuresSwiper = new Swiper(".facilities-swiper", {
