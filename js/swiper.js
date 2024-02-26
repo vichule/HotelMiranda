@@ -152,9 +152,32 @@ window.addEventListener('resize', function() {
       }
     },
   });
+
+  const popularRoomsSwiper = new Swiper(".popularList__slider", {
+    slidesPerView: 1,
+    speed: 1000,
+    navigation: {
+      nextEl: ".popularList__slider__forwardArrow",
+      prevEl: ".popularList__slider__backArrow",
+    },
+     breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      480: {
+        slidesPerView: 1,
+      },
+      768: {
+          slidesPerView: 1,
+      },
+      1000: {
+        slidesPerView: 3,
+      }
+    },
+  });
   
 
-  /*const featuresSwiper = new Swiper(".facilities-swiper", {
+  /*const featuresSwiper = new Swiper(".facilities-swiper", {  
     spaceBetween: 30,
     loop: true,
     speed: 1000,
