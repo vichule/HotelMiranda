@@ -86,7 +86,6 @@ window.addEventListener('resize', function() {
 
   const menuSwiper = new Swiper(".menu__sliderMenu", {
     slidesPerView: 1,
-    loop: true,
     speed: 1000,
     navigation: {
       nextEl: "#backArrow",
