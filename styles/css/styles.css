@@ -784,9 +784,6 @@ header {
   margin-left: 0.3em;
   margin-bottom: 0.5em;
 }
-.menu__wrapper {
-  max-width: 20em;
-}
 .menu__sliderMenu__container1__item {
   display: flex;
   margin: 1em 2em 2em 2em;
@@ -872,8 +869,20 @@ header {
   height: 35em;
 }
 
-.enable {
-  background-color: #BEAD8E;
+.menu__sliderMenu {
+  width: 35em;
+  height: 40em;
+}
+
+.menu__sliderMenu .swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+.menu__sliderMenu img {
+  width: 10em;
+  height: 10em;
+  vertical-align: bottom;
 }
 
 @media (width > 1000px) {
@@ -1046,7 +1055,7 @@ header {
 .footerContainer__main__services__listContainer {
   display: flex;
   justify-content: space-between;
-  width: 20em;
+  width: 25em;
   margin-left: 1.5em;
 }
 .footerContainer__main__services__listContainer__list {

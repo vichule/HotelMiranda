@@ -86,10 +86,14 @@ window.addEventListener('resize', function() {
 
   const menuSwiper = new Swiper(".menu__sliderMenu", {
     slidesPerView: 1,
+    grid:{
+      rows: 3,
+    },
+    spaceBetween: 10,
     speed: 1000,
     navigation: {
-      nextEl: "#backArrow",
-      prevEl: "#forwardArrow",
+      nextEl: ".menu__sliderMenu__forwardArrow",
+      prevEl: ".menu__sliderMenu__backArrow",
     },
      breakpoints: {
       320: {

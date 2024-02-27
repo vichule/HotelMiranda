@@ -26,9 +26,7 @@
         margin-left: 0.3em;
         margin-bottom: 0.5em;
     }
-    &__wrapper{
-        max-width: 20em;
-    }
+    
     &__sliderMenu{
 
         &__container1{
@@ -141,8 +139,20 @@
     }
 }
 
-.enable{
-    background-color: #BEAD8E;
+.menu__sliderMenu{
+    width: 35em ;
+    height: 40em;
+}
+.menu__sliderMenu .swiper-slide{
+    height: auto ; 
+    display: flex;
+
+}
+.menu__sliderMenu img{
+    width: 10em;
+    height: 10em;
+    vertical-align: bottom;
+    
 }
 
 @media (width > 1000px) {
