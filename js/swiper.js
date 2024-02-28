@@ -85,9 +85,10 @@ window.addEventListener('resize', function() {
   });
 
   const menuSwiper = new Swiper(".menu__sliderMenu", {
-    slidesPerView: 1,
+    slidesPerView: 3,
     grid:{
       rows: 3,
+      fill: 'row'
     },
     spaceBetween: 10,
     speed: 1000,
