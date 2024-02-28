@@ -63,7 +63,7 @@ window.addEventListener('resize', function() {
 });
 
   const homeRoomsSwiper = new Swiper(".homerooms__slider", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
     speed: 1000,
@@ -72,9 +72,7 @@ window.addEventListener('resize', function() {
       prevEl: ".homerooms-backArrow",
     },
      breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
+      
       480: {
         slidesPerView: 2,
       },
@@ -115,12 +113,7 @@ window.addEventListener('resize', function() {
       disableOnInteraction: false,
       },
      breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 1,
-      },
+      
       1000:{
         slidesPerView: 3,
       }
@@ -139,9 +132,7 @@ window.addEventListener('resize', function() {
       disableOnInteraction: false,
       },
      breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
+      
       768: {
         slidesPerView: 2,
       },
@@ -160,43 +151,29 @@ window.addEventListener('resize', function() {
       prevEl: ".popularList__slider__backArrow",
     },
      breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      480: {
-        slidesPerView: 1,
-      },
-      768: {
-          slidesPerView: 1,
-      },
+      
       1000: {
         slidesPerView: 3,
       }
     },
   });
 
-  const roomListSwiper = new Swiper(".roomsGrid__slider", {
-    slidesPerView: 1,
+  const roomGridSwiper = new Swiper(".roomsGrid__slider", {
     speed: 1000,
     grid: {
-      rows: 5,
+      rows: 5
     },
     navigation: {
       nextEl: ".roomsGrid__slider__forwardArrow",
       prevEl: ".roomsGrid__slider__backArrow",
     },
      breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      480: {
-        slidesPerView: 2,
-      },
-      768: {
-          slidesPerView: 2,
-      },
+      
       1000: {
         slidesPerView: 3,
+        grid:{
+          rows: 5
+        }
       }
     },
     pagination: {

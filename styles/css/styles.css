@@ -532,10 +532,20 @@ header {
     height: 35em;
   }
   .homerooms-backArrow {
-    right: 30em;
+    right: 10em;
   }
   .homerooms-forwardArrow {
-    left: 30em;
+    left: 60em;
+  }
+  .homerooms__slider__descriptions {
+    display: inline-block;
+  }
+  .homerooms__slider__descriptions__item {
+    width: 50em;
+    bottom: 3em;
+    display: flex;
+    align-items: center;
+    right: 3.3em;
   }
 }
 .intro {
@@ -1427,6 +1437,9 @@ header {
   text-align: left;
   margin-left: 0.3em;
   margin-bottom: 0.5em;
+  text-decoration: none;
+  color: black;
+  display: block;
 }
 .offermain__item__container1__prices {
   position: relative;
@@ -1460,7 +1473,7 @@ header {
   color: #777777;
   margin-left: 1.3em;
 }
-.offermain__item__container2__description button {
+.offermain__item__container2__description a.button {
   position: relative;
   top: 18em;
   background: #BEAD8E;
@@ -1473,6 +1486,9 @@ header {
   height: 5em;
   border: none;
   margin-left: 1em;
+  display: inline-block;
+  padding: 2em 0em 0em 7em;
+  text-decoration: none;
 }
 .offermain__item__container2__list {
   display: flex;
@@ -1593,7 +1609,7 @@ header {
 
 .roomsGrid__slider {
   width: 100% !important;
-  height: 245em;
+  height: 210em;
   margin-top: 2em;
   margin-bottom: 5em;
 }
@@ -1636,7 +1652,13 @@ header {
 
 @media (width > 1000px) {
   .roomsGrid__slider {
-    width: 60% !important;
+    width: 65% !important;
+  }
+  .roomsGrid__slider img {
+    width: 35em;
+  }
+  .roomsGrid__slider .swiper-slide {
+    height: 45em !important;
   }
 }
 .contactIntro {
@@ -1759,6 +1781,96 @@ header {
     margin-left: 30em;
     margin-top: 2em;
   }
+}
+.details {
+  margin: 5em 2em 2em 2em;
+}
+.details p {
+  font-family: Roboto;
+  font-size: 1.3em;
+  font-weight: 400;
+  line-height: 2em;
+  color: #777777;
+}
+.details-container__item__text h1 {
+  color: #777777;
+  font-family: Archivo;
+  font-size: 1.1em;
+  font-weight: 700;
+  line-height: 1.8em;
+  letter-spacing: 0.1em;
+  margin-bottom: 1em;
+}
+.details-container__item__text h4 {
+  font-family: Old Standard TT;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 1.1em;
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+.details-container__item__text p {
+  color: #BEAD8E;
+  font-family: Archivo;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+.details-container__image {
+  width: 33.5em;
+}
+.details-container__image img {
+  width: 100%;
+}
+.details-container__form {
+  text-align: center;
+}
+.details-container__form h2 {
+  font-family: Archivo;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 2em;
+  letter-spacing: -0.05em;
+  margin: 2em;
+}
+.details-container__form li {
+  list-style-type: none;
+}
+.details-container__form li label {
+  display: block;
+  margin: 1em 0em 1em 1.5em;
+  text-align: left;
+  font-family: Archivo;
+  font-size: 1.4em;
+  font-weight: 700;
+  line-height: 15px;
+}
+.details-container__form li input {
+  border: none;
+  background-color: #f0eeee;
+  height: 4em;
+  width: 30em;
+  padding: 1em;
+  color: #777777;
+}
+.details-container__form li textarea {
+  border: none;
+  background-color: #f0eeee;
+  min-height: 10em;
+  width: 30em;
+  padding: 1em;
+}
+.details-container__form li .checkBtn {
+  background-color: #BEAD8E;
+  color: white;
+  font-family: Archivo;
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0.2em;
+  width: 21.5em;
+  margin-top: 2em;
+  margin-bottom: 4em;
 }
 
 /*# sourceMappingURL=styles.css.map */

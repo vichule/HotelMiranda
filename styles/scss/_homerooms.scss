@@ -98,11 +98,25 @@
 
     .homerooms{
         &-backArrow{
-            right: 30em;
+            right: 10em;
         }
         &-forwardArrow{
-            left: 30em;
-        }    
+            left: 60em;
+        }   
+        &__slider{
+
+            &__descriptions{
+                display: inline-block;
+
+                &__item{
+                    width: 50em;
+                    bottom: 3em;
+                    display: flex;
+                    align-items: center;
+                    right: 3.3em;
+                }
+            }
+        } 
     }
     
 }

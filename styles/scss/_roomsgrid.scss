@@ -1,6 +1,6 @@
 .roomsGrid__slider{
     width: 100% !important;
-    height: 245em;
+    height: 210em;
     margin-top: 2em;
     margin-bottom: 5em;
 }
@@ -44,6 +44,14 @@
 @media (width > 1000px) {
 
     .roomsGrid__slider{
-        width: 60% !important;
+        width: 65% !important;
+
+        img{
+            width: 35em;
+        }
+
+        .swiper-slide{
+            height: 45em !important;
+        }
     }
 }

@@ -30,6 +30,9 @@
                     text-align: left;
                     margin-left: 0.3em;
                     margin-bottom: 0.5em;
+                    text-decoration: none;
+                    color: black;
+                    display: block;
                 }
             }
             &__prices{
@@ -69,7 +72,7 @@
                     margin-left: 1.3em;
                 }
 
-                button{
+                a.button{
                     position: relative;
                     top: 18em;
                     background: #BEAD8E;
@@ -82,6 +85,9 @@
                     height: 5em;
                     border: none;
                     margin-left: 1em;
+                    display: inline-block;
+                    padding: 2em 0em 0em 7em;
+                    text-decoration: none;
                 }
             }
             &__list{    
