@@ -28,22 +28,24 @@
     }
     
     &__sliderMenu{
+        width: 35em ;
+        height: 40em;
+        &-slide{
 
-        &__container1{
-
-            &__item{
+            &-item{
                 display: flex;
                 margin: 1em 2em 2em 2em;
 
-                &__img{
+                img{
                     width: 10em;
                     height: 10em;
+                    vertical-align: bottom;
 
                 }
-                &__description{
+                &__text{
                     margin-left: 3em;
 
-                    &__title{
+                    h4{
                         font-family: Old Standard TT;
                         font-size: 2em;
                         font-weight: 400;
@@ -53,7 +55,7 @@
                         margin-bottom: 0.5em;
     
                     }
-                    &__par{
+                    p{
                         font-family: Roboto;
                         font-size: 1em;
                         font-weight: 400;
@@ -66,59 +68,14 @@
                 
             }
         }
-        &__container2{
-
-            &__item{
-                display: flex;
-                margin: 1em 2em 2em 2em;
-
-                &__img{
-                    width: 10em;
-                    height: 10em;
-
-                }
-                &__description{
-                    margin-left: 3em;
-
-                    &__title{
-                        font-family: Old Standard TT;
-                        font-size: 2em;
-                        font-weight: 400;
-                        line-height: 1em;
-                        letter-spacing: -0.07em;
-                        text-align: left;
-                        margin-bottom: 0.5em;
-    
-                    }
-                    &__par{
-                        font-family: Roboto;
-                        font-size: 1em;
-                        font-weight: 400;
-                        line-height: 2em;
-                        text-align: left;
-                        width: 13em;
-    
-                    }
-                }
-                
-            }
-        }
+        
         &__backArrow{
-            cursor: pointer;
-            position: relative;
-            background-color: #ebebeb;
-            padding: 1em;
             bottom: 0em;
-            left: 29em;
+            left: 25em;
         }
         &__forwardArrow{
-            cursor: pointer;
-            position: relative;
-            background-color: #BDAC8D;
-            padding: 1em;
             bottom: 0em;
-            left: 30em;
-            color: white;
+            left: 26em;
 
         }
     }
@@ -139,21 +96,23 @@
     }
 }
 
-.menu__sliderMenu{
-    width: 35em ;
-    height: 40em;
+#backArrow{
+    cursor: pointer;
+    position: relative;
+    background-color: #ebebeb;
+    padding: 1em;
+    display: inline-block;
 }
-.menu__sliderMenu .swiper-slide{
-    height: auto ; 
-    display: flex;
 
+#forwardArrow{
+    cursor: pointer;
+    position: relative;
+    background-color: #BDAC8D;
+    padding: 1em;
+    color: white;
+    display: inline-block;
 }
-.menu__sliderMenu img{
-    width: 10em;
-    height: 10em;
-    vertical-align: bottom;
-    
-}
+
 
 @media (width > 1000px) {
 
@@ -164,61 +123,37 @@
         padding-top: 20em;
 
         &__sliderMenu{
-            display: flex;
-            &__container1{
+            width: 100em;
+            &-slide{
                 
-                &__item{
+                &-item{
     
-                    &__img{
+                    img{
                         width: 10em;
                         height: 10em;
                     } 
-                    &__description{
-                        &__par{
+                    &__text{
+                        p{
                             font-size: 1.3em;
                             width: 21em;
                         }
-                        &__title{
+                        h4{
                             font-size: 2.5em;
                         }
                     }
-                }
-            }
-            &__container2{
-
-                display: block;
-
-                &__item{
-    
-                    &__img{
-                        width: 10em;
-                        height: 10em;
-    
-                    }
-                    &__description{
-                        &__par{
-                            font-size: 1.3em;
-                            width: 21em;
-                        }
-                        &__title{
-                            font-size: 2.5em;
-                        }
-                    }  
                 }
             }
             &__backArrow{
                 height: 4em;
                 width: 4em;
                 padding: 1.3em 0em 0em 1.5em;
-                bottom: 12em;
-                left: 0em;
+                left: 80em;
             }
             &__forwardArrow{
                 height: 4em;
                 width: 4em;
                 padding: 1.3em 0em 0em 1.5em;
-                bottom: 12em;
-                left: 1.5em;
+                left: 82em;
     
             }
         }

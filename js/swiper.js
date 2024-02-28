@@ -68,8 +68,8 @@ window.addEventListener('resize', function() {
     loop: true,
     speed: 1000,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".homerooms-forwardArrow",
+      prevEl: ".homerooms-backArrow",
     },
      breakpoints: {
       320: {
@@ -84,30 +84,23 @@ window.addEventListener('resize', function() {
     },
   });
 
-  const menuSwiper = new Swiper(".menu__sliderMenu", {
-    slidesPerView: 3,
-    grid:{
-      rows: 3,
-      fill: 'row'
-    },
-    spaceBetween: 10,
+  
+
+  const menuSwiper = new Swiper('.menu__sliderMenu', {
+    autoHeight: true,
     speed: 1000,
     navigation: {
       nextEl: ".menu__sliderMenu__forwardArrow",
       prevEl: ".menu__sliderMenu__backArrow",
     },
-     breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      480: {
-        slidesPerView: 1,
-      },
-      1000: {
-          slidesPerView: 2,
-      },
+
+    breakpoints: {
+        1000: {
+            slidesPerView: 2,
+        }
     },
-  });
+
+});
 
   
   const menuPicsSwiper = new Swiper(".menu__sliderPics", {
@@ -216,27 +209,3 @@ window.addEventListener('resize', function() {
       },
   });
   
-
-  /*const featuresSwiper = new Swiper(".facilities-swiper", {  
-    spaceBetween: 30,
-    loop: true,
-    speed: 1000,
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-      },
-     breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      480: {
-        slidesPerView: 1,
-      },
-      768: {
-          slidesPerView: 6,
-      },
-    },
-  });*/
