@@ -7,6 +7,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Old+Standard+TT&family=Roboto&display=swap" rel="stylesheet"><link href="styles.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="/js/script.js" type="text/javascript" defer></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </head>
     <body>
         <header>
@@ -117,6 +119,78 @@
             </p>
         </section>
 
+        <section class="amenities">
+            <h4>Amenities</h4>
+            <div class="amenities-list">
+                <ul>
+                    <li><img src="/assets/offers/air.png">Air conditioner</li>
+                    <li><img src="/assets/offers/breakfast.png">Breakfast</li>
+                    <li><img src="/assets/offers/cleaning.png">Cleaning</li>
+                    <li><img src="/assets/offers/grocery.png">Grocery</li>
+                    <li><img src="/assets/offers/shop.png">Shop near</li>
+                    <li><img src="/assets/detailsroom/headset.png">24/7 Online Support</li>
+                    <li><img src="/assets/detailsroom/lock.png">Smart Security</li>
+                </ul>
+                <ul>
+                    <li><img src="/assets/offers/wifi.png">High speed WiFi</li>
+                    <li><img src="/assets/offers/kitchen.png">Kitchen</li>
+                    <li><img src="/assets/offers/shower.png">Shower</li>
+                    <li><img src="/assets/offers/bed.png">Single bed</li>
+                    <li><img src="/assets/offers/towels.png">Towels</li>
+                    <li><img src="/assets/detailsroom/key.png">Strong Locker</li>
+                    <li><img src="/assets/detailsroom/person.png">Expert Team</li>
+                </ul>
+            </div>
+            <div class="amenities-profile">
+                <div class="amenities-profile__checkmark">&#10003;</div>
+                <img src="/assets/detailsroom/image2.jpeg" alt="">
+                <h4>Javier Cab.D.</h4>
+                <h2>FOUNDER, QUX CO.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+            <div class="amenities-cancellation">
+                <h4>Cancellation</h4>
+                <p>Phasellus volutpat neque a tellus venenatis, a euismod augue facilisis. Fusce ut metus mattis, consequat metus nec,
+                luctus lectus. Pellentesque orci quis hendrerit sed eu dolor. Cancel up to 14 days to get a full refund.</p>
+            </div>
+        </section>
+
+        <section class="relatedRooms">
+            <h4>Related Rooms</h4>
+            <div class="swiper relatedRooms-slider">
+                <div class="swiper-wrapper relatedRooms-slider-wrapper">
+                  <div class="swiper-slide relatedRooms-slider__slide">
+                    <img id="roomsImg" src="/assets/home/minimal_room.jpg" alt="">
+                    <img src="/assets/home/frame_rooms.jpg" alt="" class="relatedRooms-slider__slide__complements">
+                    <h1 class="relatedRooms-slider__slide__title">Minimal Duplex Room</h1>
+                    <p class="relatedRooms-slider__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                    <span class="relatedRooms-slider__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                  </div>
+                  <div class="swiper-slide relatedRooms-slider__slide">
+                    <img id="roomsImg" src="/assets/home/minimal_room.jpg" alt="">
+                    <img src="/assets/home/frame_rooms.jpg" alt="" class="relatedRooms-slider__slide__complements">
+                    <h1 class="relatedRooms-slider__slide__title">Minimal Duplex Room</h1>
+                    <p class="relatedRooms-slider__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                    <span class="relatedRooms-slider__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                  </div>
+                  <div class="swiper-slide relatedRooms-slider__slide">
+                    <img id="roomsImg" src="/assets/home/minimal_room.jpg" alt="">
+                    <img src="/assets/home/frame_rooms.jpg" alt="" class="relatedRooms-slider__slide__complements">
+                    <h1 class="relatedRooms-slider__slide__title">Minimal Duplex Room</h1>
+                    <p class="relatedRooms-slider__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+                    <span class="relatedRooms-slider__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                  </div>
+                </div>
+              
+                <div class="relatedRooms-slider__backArrow" id="backArrow">&#10094;</div>
+                <div class="relatedRooms-slider__forwardArrow" id="forwardArrow">&#10095;</div>
+              
+            </div>
+        </section>
+
 
 <footer class="footerContainer">
     <div class="footerContainer__main">
@@ -186,5 +260,6 @@
         <p class="footerContainer__termsContainer__terms">Terms of use    |    Privacy Environmental Policy</p>
     </div>  
 </footer>
+<script src="/js/swiper.js" type="module"></script>
 </body>
 </html>

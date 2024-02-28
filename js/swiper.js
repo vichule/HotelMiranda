@@ -158,6 +158,23 @@ window.addEventListener('resize', function() {
     },
   });
 
+  
+  const relatedRoomsSwiper = new Swiper(".relatedRooms-slider", {
+    slidesPerView: 1,
+    spaceBetween: 50,
+    speed: 1000,
+    navigation: {
+      nextEl: ".relatedRooms-slider__forwardArrow",
+      prevEl: ".relatedRooms-slider__backArrow",
+    },
+     breakpoints: {
+      
+      1000: {
+        slidesPerView: 3,
+      }
+    },
+  });
+  
   const roomGridSwiper = new Swiper(".roomsGrid__slider", {
     speed: 1000,
     grid: {

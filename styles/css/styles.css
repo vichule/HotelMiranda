@@ -1873,4 +1873,160 @@ header {
   margin-bottom: 4em;
 }
 
+.amenities {
+  margin: 5em 2em 10em 2em;
+}
+.amenities h4 {
+  font-family: Old Standard TT;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 2em;
+  text-align: left;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.231372549);
+  margin-bottom: 1em;
+}
+.amenities-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 25em;
+  margin-left: 1.5em;
+}
+.amenities-list ul {
+  list-style-type: none;
+}
+.amenities-list li {
+  font-family: Roboto;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #777777;
+  margin-bottom: 1em;
+}
+.amenities-list img {
+  max-width: 1.3em;
+  margin-right: 0.5em;
+}
+.amenities-profile {
+  text-align: center;
+  margin-top: 10em;
+}
+.amenities-profile__checkmark {
+  background-color: #BDAC8D;
+  width: 4em;
+  height: 4em;
+  padding: 1.2em;
+  border-radius: 5em;
+  color: white;
+  border: 3px solid white;
+  position: absolute;
+  z-index: 10;
+  left: 21em;
+}
+.amenities-profile h4 {
+  border: none;
+  text-align: center;
+  margin-bottom: 0em;
+}
+.amenities-profile h2 {
+  font-family: Archivo;
+  font-size: 1.4em;
+  font-weight: 700;
+  line-height: 1.5em;
+  letter-spacing: 0.2em;
+  color: #BDAC8D;
+  margin-bottom: 1em;
+}
+.amenities-profile p {
+  font-family: Archivo;
+  font-size: 1.6em;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #777777;
+}
+.amenities-profile img {
+  width: 15em;
+  border-radius: 10em;
+  height: 15em;
+}
+.amenities-cancellation {
+  margin-top: 10em;
+}
+.amenities-cancellation p {
+  font-family: Roboto;
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-align: left;
+  color: #777777;
+}
+
+.relatedRooms {
+  margin: 5em 2em 2em 2em;
+}
+.relatedRooms h4 {
+  font-family: Old Standard TT;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 2em;
+  text-align: left;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.231372549);
+  margin-bottom: 1em;
+}
+.relatedRooms-slider {
+  text-align: center;
+}
+.relatedRooms-slider__slide {
+  width: 10em;
+}
+.relatedRooms-slider__slide__title {
+  font-family: Old Standard TT;
+  font-size: 2.8em;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  text-align: center;
+}
+.relatedRooms-slider__slide__par {
+  color: #777777;
+  font-family: Archivo;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.7em;
+  text-align: center;
+  padding: 1em 6em 1em 6em;
+}
+.relatedRooms-slider__slide__price {
+  font-size: 2em;
+  font-family: Archivo;
+  font-weight: 700;
+  color: #BEAD8E;
+  display: inline-block;
+  margin: 0em 1em 1em 0em;
+}
+.relatedRooms-slider__slide__complements {
+  width: 25em;
+  height: 5em;
+  z-index: 10;
+  position: relative;
+  bottom: 2em;
+}
+.relatedRooms-slider__slide a {
+  font-family: Archivo;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0px;
+  text-align: right;
+  color: #BDBDBD;
+  text-decoration: none;
+}
+.relatedRooms-slider__forwardArrow {
+  z-index: 10;
+  bottom: 30em;
+  left: 14em;
+}
+.relatedRooms-slider__backArrow {
+  z-index: 10;
+  bottom: 30em;
+  right: 14em;
+}
+
 /*# sourceMappingURL=styles.css.map */
