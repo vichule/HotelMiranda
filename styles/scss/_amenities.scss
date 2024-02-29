@@ -32,8 +32,9 @@
         }
     }
     &-profile{
+        max-width: 35em;
         text-align: center;
-        margin-top: 10em;
+        padding: 5em;
 
         &__checkmark{
             background-color: #BDAC8D;
@@ -43,9 +44,10 @@
             border-radius: 5em;
             color: white;
             border: 3px solid white;
-            position: absolute;
+            position: relative;
             z-index: 10;
-            left: 21em;
+            left: 15em;
+            top: 5em;
         }
 
         h4{
@@ -77,7 +79,7 @@
         }
     }
     &-cancellation{
-        margin-top: 10em;
+        margin-top: 5em;
         p{
             font-family: Roboto;
             font-size: 1.4em;
@@ -87,4 +89,35 @@
             color: #777777;
         }
     }
+}
+
+@media (width > 1000px) {
+    .amenities{
+        padding: 0em 30em 0em 30em;
+        display: block !important;
+
+        &-profile{
+            margin-top: 5em;
+            padding: 5em 5em 10em 5em;
+            box-shadow: 3px 3px 10px 3px #BEAD8E45;
+
+            &__checkmark{
+                left: 16em;
+            }
+        }
+        &-cancellation{
+            width: 57em;
+        }
+        &-list{
+            max-width: 35em;
+        }
+    }
+}
+
+@media (width > 600px) {
+    .amenities{
+        display: grid;
+        justify-items: center;
+    }
+    
 }

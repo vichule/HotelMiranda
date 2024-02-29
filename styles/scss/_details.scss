@@ -103,3 +103,49 @@
 
     }
 }
+
+@media (width > 1000px) {
+
+    .details{
+        display: block !important;
+        &-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5em;
+
+            &__item{
+                max-width: 100em;
+
+                &__text{
+                    width: 85%;
+                    background-color: white;
+                    translate: 0em 8em;
+                    padding: 0em 5em 1em 5em;
+                }
+            }
+            &__image{
+                width: 90%;
+            }
+        }
+
+        
+    }
+    #introPar{
+        width: 50em;
+        margin-left: 15%;
+    }
+    #titleDiv{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+@media (width > 600px) {
+    .details{
+        display: grid;
+        justify-items: center;
+    }
+    
+}

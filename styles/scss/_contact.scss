@@ -53,6 +53,7 @@
             display: block;
             margin-bottom: 1em;
             min-height: 3em;
+            text-align: center;
 
             .field-style{
                 box-sizing: border-box; 
@@ -94,7 +95,6 @@
     height: 5em;
     border: none;
     cursor: pointer;
-    margin-left: 6em;
 }
 
 
@@ -139,7 +139,6 @@
     }
 
     .contactBtn{
-        margin-left: 30em;
         margin-top: 2em;
     }
 

@@ -1,6 +1,7 @@
 .offermain{
     padding-top: 5em;
     
+    
     &__item{
         padding: 0em 2em 10em 2em;
 
@@ -122,7 +123,7 @@
         justify-content: center;
 
         &__item{
-            width: 95em;
+            width: 95em !important;
             
             &-card{
                 background-color: white;
@@ -171,6 +172,19 @@
                     }
                 }
             }
+        }
+    }
+}
+
+
+@media (width > 400px) {
+
+    .offermain{
+        display: grid;
+        justify-content: center;
+
+        &__item{
+            width: 38em;
         }
     }
 }

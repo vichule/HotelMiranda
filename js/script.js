@@ -2,6 +2,7 @@ const buttonMenu = document.querySelector('.header__button')
 const crossMenu = document.querySelector('#menuOpened')
 const barsMenu = document.querySelector('#menuClosed')
 const hiddenMenu = document.querySelector('.header__mobile-menu')
+const headerBar = document.querySelector('header')
 
 let dropdown = false;
 
@@ -20,3 +21,18 @@ buttonMenu.addEventListener('click', function(){
         dropdown = false;
     }
 });
+
+
+document.addEventListener("mousemove", (event) => {
+    let y = event.clientY
+    if(y <= 200){
+        headerBar.classList.remove('header-normal')
+        headerBar.classList.add('header-down')
+    }else if(y >= 200){
+        headerBar.classList.remove('header-down')
+        headerBar.classList.add('header-normal')
+    }
+});
+
+
+

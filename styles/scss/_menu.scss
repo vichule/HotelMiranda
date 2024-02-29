@@ -34,7 +34,7 @@
 
             &-item{
                 display: flex;
-                margin: 1em 2em 2em 2em;
+                margin: 1em 0em 2em 2em;
 
                 img{
                     width: 10em;
@@ -44,6 +44,7 @@
                 }
                 &__text{
                     margin-left: 3em;
+                    padding-top: 1em;
 
                     h4{
                         font-family: Old Standard TT;
@@ -67,6 +68,13 @@
                 }
                 
             }
+            &-item:hover{
+                background-color: black;
+                color: white;
+                background-image: url(/assets/home/arrowHover.png);
+                background-repeat: no-repeat;
+                background-position-y: center;
+                background-position-x: 95%;            }
         }
         
         &__backArrow{
@@ -161,7 +169,7 @@
             &__container{
                 display: flex;
                 justify-content: center;
-                max-width: 100em;
+                max-width: 95em;
 
                 &__item{
                     display: block;

@@ -72,3 +72,12 @@
         }
     }
 }
+
+@media (width > 1000px) {
+    .relatedRooms{
+        margin-left: 15%;
+        &-slider{
+            width: 100%;
+        }
+    }
+}

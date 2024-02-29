@@ -39,8 +39,26 @@ function swiperMode() {
 
     // Disable (for tablet)
     else if(tablet.matches) {
-        swiper.destroy();
-        init = false;
+      if (!init) {
+        init = true;
+        swiper = new Swiper(".facilities__slider", {
+          spaceBetween: 30,
+          loop: true,
+          speed: 1000,
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            },
+           breakpoints: {
+            320: {
+              slidesPerView: 1,
+            },
+          },
+        });
+    }
     }
 
     // Disable (for desktop)
@@ -67,6 +85,7 @@ window.addEventListener('resize', function() {
     spaceBetween: 30,
     loop: true,
     speed: 1000,
+    grabCursor: true,
     navigation: {
       nextEl: ".homerooms-forwardArrow",
       prevEl: ".homerooms-backArrow",
@@ -85,14 +104,17 @@ window.addEventListener('resize', function() {
   
 
   const menuSwiper = new Swiper('.menu__sliderMenu', {
+    slidesPerView: 1,
     autoHeight: true,
     speed: 1000,
+    grabCursor: true,
     navigation: {
       nextEl: ".menu__sliderMenu__forwardArrow",
       prevEl: ".menu__sliderMenu__backArrow",
     },
 
     breakpoints: {
+        
         1000: {
             slidesPerView: 2,
         }
@@ -108,6 +130,7 @@ window.addEventListener('resize', function() {
     pagination: {
       el: '.swiper-pagination',
     },
+    grabCursor: true,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -162,15 +185,16 @@ window.addEventListener('resize', function() {
 
   
   const relatedRoomsSwiper = new Swiper(".relatedRooms-slider", {
-    slidesPerView: 1,
-    spaceBetween: 50,
+    spaceBetween: 30,
     speed: 1000,
     navigation: {
       nextEl: ".relatedRooms-slider__forwardArrow",
       prevEl: ".relatedRooms-slider__backArrow",
     },
      breakpoints: {
-      
+      450:{
+        slidesPerView: 2,
+      },
       1000: {
         slidesPerView: 3,
       }
@@ -182,6 +206,7 @@ window.addEventListener('resize', function() {
     grid: {
       rows: 5
     },
+    grabCursor: true,
     navigation: {
       nextEl: ".roomsGrid__slider__forwardArrow",
       prevEl: ".roomsGrid__slider__backArrow",

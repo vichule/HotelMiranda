@@ -79,6 +79,17 @@ header{
 
 }
 
+.header-down{
+    position:fixed;
+    transition: all 1s ease-out;
+}
+
+.header-normal{
+    position: fixed;
+    transform: translate3d(0, -140%, 0);
+    transition: all 1s ease-out;
+}
+
 
 
 @media (width > 1000px) {
