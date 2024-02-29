@@ -1511,6 +1511,53 @@ header {
   margin-right: 0.5em;
 }
 
+@media (width > 1000px) {
+  .offermain {
+    display: grid;
+    justify-content: center;
+  }
+  .offermain__item {
+    width: 95em;
+  }
+  .offermain__item-card {
+    background-color: white;
+    border-top: 10px solid #BDAC8D;
+    z-index: 10;
+    position: relative;
+    bottom: 10em;
+    margin: 0em 5em 0em 5em;
+  }
+  .offermain__item a img {
+    width: 100%;
+    max-width: unset;
+  }
+  .offermain__item__container1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 5em 1em 3em;
+  }
+  .offermain__item__container1__prices {
+    position: unset;
+  }
+  .offermain__item__container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .offermain__item__container2__description p {
+    max-width: 32em;
+  }
+  .offermain__item__container2__description a.button {
+    top: 3em;
+  }
+  .offermain__item__container2__list {
+    max-width: 35em;
+  }
+  .offermain__item__container2__list ul {
+    margin-right: 5em;
+  }
+}
 .popularList {
   text-align: center;
   background-color: black;
@@ -1607,6 +1654,16 @@ header {
   left: 31em;
 }
 
+@media (width > 1000px) {
+  .popularList__slider {
+    max-width: 120em;
+    margin-bottom: 10em;
+  }
+  .popularList__subtitle {
+    font-size: 8em;
+    margin-top: 1em;
+  }
+}
 .roomsGrid__slider {
   width: 100% !important;
   height: 210em;

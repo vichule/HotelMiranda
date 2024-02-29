@@ -103,3 +103,19 @@
     }
 }
 
+@media (width > 1000px) {
+
+    .popularList{
+
+        &__slider{
+            max-width: 120em;
+            margin-bottom: 10em;
+        }
+        &__subtitle{
+            font-size: 8em;
+            margin-top: 1em;
+        }
+    }
+}
+
+

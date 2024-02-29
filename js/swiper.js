@@ -144,14 +144,16 @@ window.addEventListener('resize', function() {
 
   const popularRoomsSwiper = new Swiper(".popularList__slider", {
     slidesPerView: 1,
-    spaceBetween: 50,
+    spaceBetween: 30,
     speed: 1000,
     navigation: {
       nextEl: ".popularList__slider__forwardArrow",
       prevEl: ".popularList__slider__backArrow",
     },
      breakpoints: {
-      
+      700:{
+        slidesPerView: 2,
+      },
       1000: {
         slidesPerView: 3,
       }
