@@ -140,7 +140,9 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding: 1em 5em 1em 3em;
+                padding: 1em 0em 1em 0em;
+                border-bottom: 2px solid #77777729;
+                margin: 0em 4em 4em 4em;
                 
                 &__prices{
                     position: unset;

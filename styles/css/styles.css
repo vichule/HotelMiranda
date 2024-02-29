@@ -1535,7 +1535,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1em 5em 1em 3em;
+    padding: 1em 0em 1em 0em;
+    border-bottom: 2px solid rgba(119, 119, 119, 0.1607843137);
+    margin: 0em 4em 4em 4em;
   }
   .offermain__item__container1__prices {
     position: unset;
