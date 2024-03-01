@@ -1,7 +1,7 @@
 
 .menu{
     padding-top: 10em;
-    background-image: url(./assets/home/menuIcon.png);
+    background-image: url('./assets/home/menuIcon.png');
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: top;
@@ -71,7 +71,7 @@
             &-item:hover{
                 background-color: black;
                 color: white;
-                background-image: url(./assets/home/arrowHover.png);
+                background-image: url('./assets/home/arrowHover.png');
                 background-repeat: no-repeat;
                 background-position-y: center;
                 background-position-x: 95%;            }
@@ -125,7 +125,7 @@
 @media (width > 1000px) {
 
     .menu{
-        background-image: url(/assets/home/menuIcon2.png);
+        background-image: url('./assets/home/menuIcon2.png');
         background-position-x: 15em;
         background-position-y: 0em;
         padding-top: 20em;

@@ -779,7 +779,7 @@ header {
 }
 .menu {
   padding-top: 10em;
-  background-image: url(./assets/home/menuIcon.png);
+  background-image: url("./assets/home/menuIcon.png");
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: top;
@@ -841,7 +841,7 @@ header {
 .menu__sliderMenu-slide-item:hover {
   background-color: black;
   color: white;
-  background-image: url(./assets/home/arrowHover.png);
+  background-image: url("./assets/home/arrowHover.png");
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 95%;
@@ -885,7 +885,7 @@ header {
 
 @media (width > 1000px) {
   .menu {
-    background-image: url(/assets/home/menuIcon2.png);
+    background-image: url("./assets/home/menuIcon2.png");
     background-position-x: 15em;
     background-position-y: 0em;
     padding-top: 20em;
