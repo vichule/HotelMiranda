@@ -233,7 +233,7 @@ header {
   position: absolute;
   left: 0;
   cursor: pointer;
-  background-image: url("/assets/home/calendar.png");
+  background-image: url("./assets/home/calendar.png");
   margin-left: 1.5em;
 }
 .dateCheck__container__input2 {
@@ -251,7 +251,7 @@ header {
   position: absolute;
   left: 0;
   cursor: pointer;
-  background-image: url("/assets/home/calendar.png");
+  background-image: url("./assets/home/calendar.png");
   margin-left: 1.5em;
 }
 .dateCheck__container__checkBtn {
@@ -354,7 +354,7 @@ header {
   margin: -1em 4em 5em 4em;
   min-height: 25em;
   padding: 4em 2em 4em 2em;
-  background-image: url("/assets/home/backTeam.png");
+  background-image: url("./assets/home/backTeam.png");
   background-repeat: no-repeat;
   background-position-x: 10em;
   background-position-y: 4.5em;
@@ -779,7 +779,7 @@ header {
 }
 .menu {
   padding-top: 10em;
-  background-image: url(/assets/home/menuIcon.png);
+  background-image: url(./assets/home/menuIcon.png);
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: top;
@@ -841,7 +841,7 @@ header {
 .menu__sliderMenu-slide-item:hover {
   background-color: black;
   color: white;
-  background-image: url(/assets/home/arrowHover.png);
+  background-image: url(./assets/home/arrowHover.png);
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 95%;
@@ -972,7 +972,7 @@ header {
   }
 }
 .footerContainer {
-  background-image: url("/assets/footer/footerBack.jpg");
+  background-image: url("./assets/footer/footerBack.jpg");
 }
 .footerContainer__main__intro {
   padding: 1em 2em 1em 2em;
