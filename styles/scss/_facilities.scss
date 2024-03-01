@@ -62,25 +62,6 @@
 }
 
 
-.back01{
-    background-image: url(/assets/home/01.png);
-    
-}
-.back02{
-    background-image: url(/assets/home/02.png);
-}
-.back03{
-    background-image: url(/assets/home/03.png);
-}
-.back04{
-    background-image: url(/assets/home/04.png);
-}
-.back05{
-    background-image: url(/assets/home/05.png);
-}
-.back06{
-    background-image: url(/assets/home/06.png);
-}
 
 .dark{
     background-color: #222222;
@@ -91,29 +72,6 @@
     background-color: #292929;
 }
 
-.backB01{
-    background-image: url(/assets/about/01.png);
-}
-
-.backB02{
-    background-image: url(/assets/about/02.png);
-}
-
-.backB03{
-    background-image: url(/assets/about/03.png);
-}
-
-.backB04{
-    background-image: url(/assets/about/04.png);
-}
-
-.backB05{
-    background-image: url(/assets/about/05.png);
-}
-
-.backB06{
-    background-image: url(/assets/about/06.png);
-}
 
 
 @media (width > 1000px) {
@@ -141,15 +99,6 @@
         }
     }
 
-    /*.flickity-slider{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        padding-left: 40em;
-        position: relative;
-    }
-    .flickity-page-dots{
-        display: none;
-    }*/
+    
     
 }

@@ -1,10 +1,11 @@
 
 .menu{
     padding-top: 10em;
-    background-image: url(/assets/home/menuIcon.png);
+    //background-image: url(/assets/home/menuIcon.png);
     background-repeat: no-repeat;
-    background-position-x: right;
+    background-position-x: 110%;
     background-position-y: top;
+    background-size: 35%;
     justify-content: center;
     display: grid;
 
@@ -35,7 +36,7 @@
             &-item{
                 display: flex;
                 margin: 1em 0em 2em 2em;
-
+                background: opacity($color: #00000000);
                 img{
                     width: 10em;
                     height: 10em;
@@ -74,7 +75,8 @@
                 background-image: url(/assets/home/arrowHover.png);
                 background-repeat: no-repeat;
                 background-position-y: center;
-                background-position-x: 95%;            }
+                background-position-x: 95%; 
+            }
         }
         
         &__backArrow{
@@ -125,10 +127,11 @@
 @media (width > 1000px) {
 
     .menu{
-        background-image: url(/assets/home/menuIcon2.png);
+        //background-image: url(/assets/home/menuIcon2.png);
         background-position-x: 15em;
         background-position-y: 0em;
         padding-top: 20em;
+        background-size: unset;
 
         &__sliderMenu{
             width: 100em;

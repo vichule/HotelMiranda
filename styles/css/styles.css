@@ -91,13 +91,13 @@ header {
 
 .header-down {
   position: fixed;
-  transition: all 1s ease-out;
+  transition: all 800ms ease-out;
 }
 
 .header-normal {
   position: fixed;
-  transform: translate3d(0, -140%, 0);
-  transition: all 1s ease-out;
+  transform: translate3d(0, -80%, 0);
+  transition: all 800ms ease-out;
 }
 
 @media (width > 1000px) {
@@ -691,30 +691,6 @@ header {
   color: #777777;
 }
 
-.back01 {
-  background-image: url(/assets/home/01.png);
-}
-
-.back02 {
-  background-image: url(/assets/home/02.png);
-}
-
-.back03 {
-  background-image: url(/assets/home/03.png);
-}
-
-.back04 {
-  background-image: url(/assets/home/04.png);
-}
-
-.back05 {
-  background-image: url(/assets/home/05.png);
-}
-
-.back06 {
-  background-image: url(/assets/home/06.png);
-}
-
 .dark {
   background-color: #222222;
   color: white;
@@ -722,30 +698,6 @@ header {
 
 .darkLight {
   background-color: #292929;
-}
-
-.backB01 {
-  background-image: url(/assets/about/01.png);
-}
-
-.backB02 {
-  background-image: url(/assets/about/02.png);
-}
-
-.backB03 {
-  background-image: url(/assets/about/03.png);
-}
-
-.backB04 {
-  background-image: url(/assets/about/04.png);
-}
-
-.backB05 {
-  background-image: url(/assets/about/05.png);
-}
-
-.backB06 {
-  background-image: url(/assets/about/06.png);
 }
 
 @media (width > 1000px) {
@@ -766,23 +718,13 @@ header {
   .facilities__slider__dotsLine {
     display: none;
   }
-  /*.flickity-slider{
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      padding-left: 40em;
-      position: relative;
-  }
-  .flickity-page-dots{
-      display: none;
-  }*/
 }
 .menu {
   padding-top: 10em;
-  background-image: url(/assets/home/menuIcon.png);
   background-repeat: no-repeat;
-  background-position-x: right;
+  background-position-x: 110%;
   background-position-y: top;
+  background-size: 35%;
   justify-content: center;
   display: grid;
 }
@@ -811,6 +753,7 @@ header {
 .menu__sliderMenu-slide-item {
   display: flex;
   margin: 1em 0em 2em 2em;
+  background: 0;
 }
 .menu__sliderMenu-slide-item img {
   width: 10em;
@@ -885,10 +828,10 @@ header {
 
 @media (width > 1000px) {
   .menu {
-    background-image: url(/assets/home/menuIcon2.png);
     background-position-x: 15em;
     background-position-y: 0em;
     padding-top: 20em;
+    background-size: unset;
   }
   .menu__sliderMenu {
     width: 100em;

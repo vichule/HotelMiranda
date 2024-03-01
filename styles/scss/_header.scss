@@ -81,13 +81,13 @@ header{
 
 .header-down{
     position:fixed;
-    transition: all 1s ease-out;
+    transition: all 800ms ease-out;
 }
 
 .header-normal{
     position: fixed;
-    transform: translate3d(0, -140%, 0);
-    transition: all 1s ease-out;
+    transform: translate3d(0, -80%, 0);
+    transition: all 800ms ease-out;
 }
 
 
