@@ -23,16 +23,32 @@ buttonMenu.addEventListener('click', function(){
 });
 
 
-document.addEventListener("mousemove", (event) => {
-    let y = event.clientY
-    if(y <= 200){
-        headerBar.classList.remove('header-normal')
-        headerBar.classList.add('header-down')
-    }else if(y >= 200){
-        headerBar.classList.remove('header-down')
-        headerBar.classList.add('header-normal')
-    }
-});
+window.addEventListener('scroll', function () {
+
+    let body = document.documentElement;
+
+    let scrollT = body.scrollTop || document.body.scrollTop;
+    let scrollH = body.scrollHeight || document.body.scrollHeight;
+
+
+    document.addEventListener("mousemove", (event) => {
+        let y = event.clientY
+
+
+
+        if (scrollT > 200 && y >= 200) {
+            headerBar.classList.remove('header-down')
+            headerBar.classList.add('header-normal')
+
+        } else if (scrollT < 200) {
+
+            headerBar.classList.remove('header-normal')
+            headerBar.classList.add('header-down')
+        }
+    });
+
+})
+
 
 
 
