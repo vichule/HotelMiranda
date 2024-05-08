@@ -1,6 +1,6 @@
 .roomsGrid__slider{
     width: 100% !important;
-    // height: 190em;
+    height: 210em;
     margin-top: 2em;
     margin-bottom: 5em;
 }
@@ -32,23 +32,11 @@
     display: none;
 }
 
-#roomsComplement {
-    height: 2em;
+#roomsComplement{
+    width: 25em;
+    height: 5em;
     z-index: 10;
     position: relative;
-    padding: 2px;
-    width: 5em;
-    filter: brightness(0);
-  }
-
-#amenities_frame{
-    display: flex;
-    background: ghostwhite;
-    height: 3em;
-    position: relative;
-    width: 100%;
-    justify-content: center;
-    padding: 0.5em;
     bottom: 2em;
 }
 
@@ -68,3 +56,4 @@
         }
     }
 }
+
