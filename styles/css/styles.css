@@ -89,22 +89,18 @@ header {
   display: none;
 }
 
+.header-down {
+  position: fixed;
+  transition: all 800ms ease-out;
+}
 
+.header-normal {
+  position: fixed;
+  transform: translate3d(0, -135%, 0);
+  transition: all 800ms ease-out;
+}
 
 @media (width > 1000px) {
-
-  .header-down {
-    position: fixed;
-    transition: all 800ms ease-out;
-    transform: translate3d(0, -50%, 0);
-  }
-  
-  .header-normal {
-    position: fixed;
-    transform: translate3d(0, -140%, 0);
-    transition: all 800ms ease-out;
-  }
-
   #menuClosed {
     display: none;
   }
@@ -180,6 +176,7 @@ header {
   height: 6em;
   margin-right: 2em;
   border: none;
+  cursor: pointer;
 }
 .banner__indexBtn2 {
   color: white;
@@ -193,6 +190,7 @@ header {
   height: 6em;
   border: 2px solid rgba(255, 255, 255, 0.3294117647);
   margin-top: 2em;
+  cursor: pointer;
 }
 
 @media (width > 1000px) {
@@ -232,12 +230,13 @@ header {
   font-weight: 400;
   line-height: 1.6em;
   padding-left: 2em;
+  background-repeat: no-repeat;
+  background-size: 14px;
 }
 .dateCheck__container__input1::-webkit-calendar-picker-indicator {
   position: absolute;
   left: 0;
   cursor: pointer;
-  background-image: url("/assets/home/calendar.png");
   margin-left: 1.5em;
 }
 .dateCheck__container__input2 {
@@ -250,12 +249,13 @@ header {
   font-weight: 400;
   line-height: 1.6em;
   padding-left: 2em;
+  background-repeat: no-repeat;
+  background-size: 14px;
 }
 .dateCheck__container__input2::-webkit-calendar-picker-indicator {
   position: absolute;
   left: 0;
   cursor: pointer;
-  background-image: url("/assets/home/calendar.png");
   margin-left: 1.5em;
 }
 .dateCheck__container__checkBtn {
@@ -270,6 +270,7 @@ header {
   height: 6em;
   display: block;
   margin-top: 5em;
+  cursor: pointer;
 }
 
 @media (width > 1000px) {
