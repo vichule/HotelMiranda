@@ -1,344 +1,401 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="./styles/css/styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Old+Standard+TT&family=Roboto&display=swap" rel="stylesheet"><link href="styles.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="./js/script.js" type="text/javascript" defer></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-    </head>
-    <body>
-        <header>
-            
-            <div class="header__container">
-                <p id="headerPar">We Make Your Feel Comfortable</p>
-                <div class="header__container__item1">
-                    <button class="header__button" >
-                        <img src="./assets/header/menu.png" id="menuClosed">
-                        <img src="./assets/header/menu2.png" id="menuOpened" class="hidden">
-                    </button>
-                    <a href="index.html" class="header__logo"></a>
-                </div>
-                
-                <ul class="header__container__navbar hidden">
-                    <a href="about.html"><li>About Us</li></a>
-                    <a href="rooms.html"><li>Rooms</li></a>
-                    <a href="offers.html"><li>Offers</li></a>
-                    <a href="contact.html"><li>Contact</li></a>
-                </ul>
-                
-                <div class="header__container__item2">
-                    <button class="header__button"><img src="./assets/header/profile.png"></button>
-                    <button class="header__button"><img src="./assets/header/search.png"></button>
-                </div>
-                
+
+<head>
+    <link rel="stylesheet" href="./styles/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Old+Standard+TT&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./js/script.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="header__container">
+            <p id="headerPar">We Make Your Feel Comfortable</p>
+            <div class="header__container__item1">
+                <button class="header__button">
+                    <img src="./assets/header/menu.png" id="menuClosed">
+                    <img src="./assets/header/menu2.png" id="menuOpened" class="hidden">
+                </button>
+                <a href="index.html" class="header__logo"></a>
             </div>
-            <ul class="header__mobile-menu hidden">
-                <a href="about.html"><li>About Us</li></a>
-                <a href="rooms.html"><li>Rooms</li></a>
-                <a href="offers.html"><li>Offers</li></a>
-                <a href="contact.html"><li>Contact</li></a>
+
+            <ul class="header__container__navbar hidden">
+                <a href="about.html">
+                    <li>About Us</li>
+                </a>
+                <a href="rooms.html">
+                    <li>Rooms</li>
+                </a>
+                <a href="offers.html">
+                    <li>Offers</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
             </ul>
-        </header>
 
-        <section class="bannerGeneric">
-            <p class="bannerGeneric__title">THE ULTIMATE LUXURY EXPERIENCE</p>
-            <h1 class="bannerGeneric__subtitle">Ultimate Room</h1>
-            <div class="bannerGeneric__nav">
-                <a href="index.html" id="homeBtn">Home</a>
-                <p>|</p>
-                <a href="rooms.html" id="currentBtn">Rooms</a>
+            <div class="header__container__item2">
+                <button class="header__button"><img src="./assets/header/profile.png"></button>
+                <button class="header__button"><img src="./assets/header/search.png"></button>
             </div>
-        </section>
 
-        <section class="roomsGrid">
-            <div class="swiper roomsGrid__slider">
-                <div class="swiper-wrapper ">
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                    <div class="swiper-slide popularList__slider__wrapper__slide">
-                        <img src="./assets/home/minimal_room.jpg" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
-                        <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                        <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                        <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                        <a href="room_details.html">Book Now</a>
-                    </div>
-                  
-                 
-                 
-                
+        </div>
+        <ul class="header__mobile-menu hidden">
+            <a href="about.html">
+                <li>About Us</li>
+            </a>
+            <a href="rooms.html">
+                <li>Rooms</li>
+            </a>
+            <a href="offers.html">
+                <li>Offers</li>
+            </a>
+            <a href="contact.html">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </header>
+
+    <section class="bannerGeneric">
+        <p class="bannerGeneric__title">THE ULTIMATE LUXURY EXPERIENCE</p>
+        <h1 class="bannerGeneric__subtitle">Ultimate Room</h1>
+        <div class="bannerGeneric__nav">
+            <a href="index.html" id="homeBtn">Home</a>
+            <p>|</p>
+            <a href="rooms.html" id="currentBtn">Rooms</a>
+        </div>
+    </section>
+
+    <section class="roomsGrid">
+        <div class="swiper roomsGrid__slider">
+            <div class="swiper-wrapper ">
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+                <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img src="./assets/home/minimal_room.jpg" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
+                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
+                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
+                        sicing elit, sed do eiusmod tempor.</p>
+                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
+                    <a href="room_details.html">Book Now</a>
+                </div>
+
+
+
+
                 <div class="roomsGrid__slider__backArrow">&#10094;</div>
                 <div class="roomsGrid__slider__forwardArrow">&#10095;</div>
             </div>
-            
+
             <div class="swiper-pagination"></div>
-        </section>
+    </section>
 
 
 
-<footer class="footerContainer">
-    <div class="footerContainer__main">
-        <div class="footerContainer__main__intro">
-            <div class="footerContainer__main__intro__container">
-                <h1 class="footerContainer__main__intro__container__logo">H</h1>
-                <p class="footerContainer__main__intro__container__title2"><b class="footerContainer__main__intro__container__title1">HOTEL</b> MIRANDA</p>
-            </div>
-            <p class="footerContainer__main__intro__par">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</p>
+    <footer class="footerContainer">
+        <div class="footerContainer__main">
+            <div class="footerContainer__main__intro">
+                <div class="footerContainer__main__intro__container">
+                    <h1 class="footerContainer__main__intro__container__logo">H</h1>
+                    <p class="footerContainer__main__intro__container__title2"><b
+                            class="footerContainer__main__intro__container__title1">HOTEL</b> MIRANDA</p>
+                </div>
+                <p class="footerContainer__main__intro__par">Lorem ipsum dolor sit amet, consect etur adipisicing elit,
+                    sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitat ion ullamco laboris nisi.</p>
 
-            <div class="footerContainer__main__intro__socials">
-                <img class="footerContainer__main__intro__socials__img" src="./assets/footer/facebook-logo.png" alt="">
-                <img class="footerContainer__main__intro__socials__img" src="./assets/footer/twitter-logo.png" alt="">
-                <img class="footerContainer__main__intro__socials__img" src="./assets/footer/behance-logo.png" alt="">
-                <img class="footerContainer__main__intro__socials__img" src="./assets/footer/linkedin-logo.png" alt="">
-                <img class="footerContainer__main__intro__socials__img" src="./assets/footer/youtube-logo.png" alt="">
-            </div>
-        </div>
-        <div class="footerContainer__main__services">
-            <h2 class="footerContainer__main__services__title">Services.</h2>
-            <div class="footerContainer__main__services__listContainer">
-                <ul class="footerContainer__main__services__listContainer__list">
-                    <li>Restaurant & Bar</li>
-                    <li>Swimming Pool</li>
-                    <li>Wellness & Spa</li>
-                    <li>Restaurant</li>
-                    <li>Conference Room</li>
-                    <li>Cocktail Party House</li>
-                </ul>
-                <ul class="footerContainer__main__services__listContainer__list">
-                    <li>Gaming Zone</li>
-                    <li>Marriage Party</li>
-                    <li>Party Planning</li>
-                    <li>Tour Consultancy</li>
-                </ul>
-            </div>
-            
-        </div>
-
-        <div class="footerContainer__main__contact">
-            <h2 class="footerContainer__main__contact__title">Contact Us.</h2>
-            <div class="footerContainer__main__contact__item">
-                <img class="footerContainer__main__contact__item__img" src="./assets/footer/phone-icon.png" alt="">
-                <div class="footerContainer__main__contact__item__description">
-                    <h1 class="footerContainer__main__contact__item__description__title">Phone Number</h1>
-                    <p class="footerContainer__main__contact__item__description__par">999999999</p>
+                <div class="footerContainer__main__intro__socials">
+                    <img class="footerContainer__main__intro__socials__img" src="./assets/footer/facebook-logo.png"
+                        alt="">
+                    <img class="footerContainer__main__intro__socials__img" src="./assets/footer/twitter-logo.png"
+                        alt="">
+                    <img class="footerContainer__main__intro__socials__img" src="./assets/footer/behance-logo.png"
+                        alt="">
+                    <img class="footerContainer__main__intro__socials__img" src="./assets/footer/linkedin-logo.png"
+                        alt="">
+                    <img class="footerContainer__main__intro__socials__img" src="./assets/footer/youtube-logo.png"
+                        alt="">
                 </div>
             </div>
-            <div class="footerContainer__main__contact__item">
-                <img class="footerContainer__main__contact__item__img" src="./assets/footer/email-icon.png" alt="">
-                <div class="footerContainer__main__contact__item__description">
-                    <h1 class="footerContainer__main__contact__item__description__title">Email</h1>
-                    <p class="footerContainer__main__contact__item__description__par">fakeemail1@gmail.com</p>
+            <div class="footerContainer__main__services">
+                <h2 class="footerContainer__main__services__title">Services.</h2>
+                <div class="footerContainer__main__services__listContainer">
+                    <ul class="footerContainer__main__services__listContainer__list">
+                        <li>Restaurant & Bar</li>
+                        <li>Swimming Pool</li>
+                        <li>Wellness & Spa</li>
+                        <li>Restaurant</li>
+                        <li>Conference Room</li>
+                        <li>Cocktail Party House</li>
+                    </ul>
+                    <ul class="footerContainer__main__services__listContainer__list">
+                        <li>Gaming Zone</li>
+                        <li>Marriage Party</li>
+                        <li>Party Planning</li>
+                        <li>Tour Consultancy</li>
+                    </ul>
                 </div>
+
             </div>
-            <div class="footerContainer__main__contact__item">
-                <img class="footerContainer__main__contact__item__img" src="/assets/footer/address-icon.png" alt="">
-                <div class="footerContainer__main__contact__item__description">
-                    <h1 class="footerContainer__main__contact__item__description__title">Address</h1>
-                    <p class="footerContainer__main__contact__item__description__par">Madrid, Spain.</p>
+
+            <div class="footerContainer__main__contact">
+                <h2 class="footerContainer__main__contact__title">Contact Us.</h2>
+                <div class="footerContainer__main__contact__item">
+                    <img class="footerContainer__main__contact__item__img" src="./assets/footer/phone-icon.png" alt="">
+                    <div class="footerContainer__main__contact__item__description">
+                        <h1 class="footerContainer__main__contact__item__description__title">Phone Number</h1>
+                        <p class="footerContainer__main__contact__item__description__par">999999999</p>
+                    </div>
+                </div>
+                <div class="footerContainer__main__contact__item">
+                    <img class="footerContainer__main__contact__item__img" src="./assets/footer/email-icon.png" alt="">
+                    <div class="footerContainer__main__contact__item__description">
+                        <h1 class="footerContainer__main__contact__item__description__title">Email</h1>
+                        <p class="footerContainer__main__contact__item__description__par">fakeemail1@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footerContainer__main__contact__item">
+                    <img class="footerContainer__main__contact__item__img" src="/assets/footer/address-icon.png" alt="">
+                    <div class="footerContainer__main__contact__item__description">
+                        <h1 class="footerContainer__main__contact__item__description__title">Address</h1>
+                        <p class="footerContainer__main__contact__item__description__par">Madrid, Spain.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footerContainer__termsContainer">
-        <p class="footerContainer__termsContainer__rights">&copy;By Javier Cabañas - 2024</p>
-        <p class="footerContainer__termsContainer__terms">Terms of use    |    Privacy Environmental Policy</p>
-    </div>  
-</footer>
-<script src="./js/swiper.js" type="module"></script>
+        <div class="footerContainer__termsContainer">
+            <p class="footerContainer__termsContainer__rights">&copy;By Javier Cabañas - 2024</p>
+            <p class="footerContainer__termsContainer__terms">Terms of use | Privacy Environmental Policy</p>
+        </div>
+    </footer>
+    <script src="./js/swiper.js" type="module"></script>
 </body>
+
 </html>

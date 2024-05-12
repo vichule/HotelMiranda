@@ -6,15 +6,15 @@ const headerBar = document.querySelector('header')
 
 let dropdown = false;
 
-buttonMenu.addEventListener('click', function(){
-			
-    if(!dropdown){
+buttonMenu.addEventListener('click', function () {
+
+    if (!dropdown) {
 
         hiddenMenu.classList.remove('hidden');
         crossMenu.classList.remove('hidden');
         barsMenu.classList.add('hidden');
         dropdown = true;
-    }else{
+    } else {
         hiddenMenu.classList.add('hidden');
         crossMenu.classList.add('hidden');
         barsMenu.classList.remove('hidden');
