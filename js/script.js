@@ -3,6 +3,9 @@ const crossMenu = document.querySelector('#menuOpened')
 const barsMenu = document.querySelector('#menuClosed')
 const hiddenMenu = document.querySelector('.header__mobile-menu')
 const headerBar = document.querySelector('header')
+const contactBtn = document.querySelector('.contactBtn')
+const contactForm = document.querySelector('.contactForm__form')
+const bookingForm = document.querySelector('.details-container__form')
 
 let dropdown = false;
 
@@ -49,6 +52,41 @@ window.addEventListener('scroll', function () {
 
 })
 
+
+if(contactForm){
+    contactForm.addEventListener("submit", function (event){
+        event.preventDefault();
+        swal({
+            title: 'Succes!',
+            text: 'Thanks for your time, your data was sent succesfully!',
+        }).then(() => {
+            window.location = 'contact.html'
+        })
+    });
+}
+
+
+if(bookingForm){
+    bookingForm.addEventListener("submit", function (event){
+        console.log(bookingForm)
+        if(bookingForm.in === ''){
+            event.preventDefault();
+            swal({
+                title: 'error',
+                text: 'You have to write down every input',
+            })
+        }else{
+            event.preventDefault();
+        swal({
+            title: 'Succes!',
+            text: 'Your booking is complete!',
+        }).then(() => {
+            window.location = 'rooms.html'
+        })
+        }
+        
+    });
+}
 
 
 

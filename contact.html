@@ -14,6 +14,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
 </head>
 
 <body>
@@ -114,25 +116,25 @@
             <ul>
                 <div class="contactForm__form__inputContainer">
                     <li>
-                        <input type="text" name="field1" class="field-style field-full" placeholder="Your full name" />
+                        <input required type="text" name="field1" class="field-style field-full" placeholder="Your full name" />
                     </li>
                     <li>
-                        <input type="text" name="field2" class="field-style field-full"
+                        <input required type="text" name="field2" class="field-style field-full"
                             placeholder="Add phone number" />
                     </li>
                 </div>
-                <div class="contactForm__form__inputContainer">
+                <div class="contactForm__form__input requiredContainer">
                     <li>
-                        <input type="email" name="field3" class="field-style field-full"
+                        <input required type="email" name="field3" class="field-style field-full"
                             placeholder="Enter email address" />
                     </li>
                     <li>
-                        <input type="text" name="field4" class="field-style field-full" placeholder="Enter subject" />
+                        <input required type="text" name="field4" class="field-style field-full" placeholder="Enter subject" />
                     </li>
                 </div>
 
                 <li>
-                    <textarea name="field5" class="field-style" placeholder="Enter message"></textarea>
+                    <textarea required name="field5" class="field-style" placeholder="Enter message"></textarea>
                 </li>
                 <li>
                     <input type="submit" value="SEND" class="contactBtn" />
