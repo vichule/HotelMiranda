@@ -366,9 +366,9 @@ header {
   background-color: white;
   background-size: 10em;
   max-width: 25em;
+  text-align: center;
 }
 .homeAbout__secondContainer__card1__teamContainer__img {
-  margin-left: 6em;
   width: 5em;
 }
 .homeAbout__secondContainer__card1__teamContainer__title {
@@ -376,7 +376,6 @@ header {
   font-size: 3em;
   font-weight: 400;
   letter-spacing: -0.05em;
-  text-align: center;
   margin: 0.5em 0em 0.5em 0em;
 }
 .homeAbout__secondContainer__card1__teamContainer__par {
@@ -384,7 +383,6 @@ header {
   font-size: 1.1em;
   font-weight: 400;
   line-height: 1.5em;
-  text-align: center;
 }
 .homeAbout__secondContainer__card2__pic {
   width: 23.5em;
@@ -398,9 +396,9 @@ header {
   min-height: 25em;
   padding: 4em 2em 4em 2em;
   max-width: 23.5em;
+  text-align: center;
 }
 .homeAbout__secondContainer__card2__roomContainer__img {
-  margin-left: 7em;
   width: 5em;
 }
 .homeAbout__secondContainer__card2__roomContainer__title {
@@ -444,7 +442,7 @@ header {
     margin: 0em 0em 2em 0em;
   }
   .homeAbout__secondContainer__card1__teamContainer__par {
-    max-width: 17em;
+    width: 100%;
   }
   .homeAbout__secondContainer__card2 {
     padding-top: 5em;
@@ -458,7 +456,7 @@ header {
     min-width: 25em;
   }
   .homeAbout__secondContainer__card2__roomContainer__par {
-    max-width: 17em;
+    width: 100%;
   }
 }
 .homerooms {
@@ -527,6 +525,7 @@ header {
   height: 3em;
   z-index: 20;
   right: 15em;
+  padding: 0.8em 0em 0.5em 0em;
 }
 .homerooms-forwardArrow {
   bottom: 12em;
@@ -534,6 +533,7 @@ header {
   height: 3em;
   z-index: 20;
   left: 14em;
+  padding: 0.8em 0em 0.5em 0em;
 }
 
 #roomsImg {
@@ -760,6 +760,7 @@ header {
   display: flex;
   margin: 1em 0em 2em 2em;
   background: 0;
+  background-size: 0;
 }
 .menu__sliderMenu-slide-item img {
   width: 10em;
@@ -790,10 +791,10 @@ header {
 .menu__sliderMenu-slide-item:hover {
   background-color: black;
   color: white;
-  background-image: url(/assets/home/arrowHover.png);
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 95%;
+  background-size: auto;
 }
 .menu__sliderMenu__backArrow {
   bottom: 0em;
@@ -819,7 +820,6 @@ header {
   cursor: pointer;
   position: relative;
   background-color: #ebebeb;
-  padding: 1em;
   display: inline-block;
 }
 
@@ -827,7 +827,6 @@ header {
   cursor: pointer;
   position: relative;
   background-color: #BDAC8D;
-  padding: 1em;
   color: white;
   display: inline-block;
 }
@@ -1919,6 +1918,7 @@ header {
   width: 21.5em;
   margin-top: 2em;
   margin-bottom: 4em;
+  cursor: pointer;
 }
 
 @media (width > 1000px) {
